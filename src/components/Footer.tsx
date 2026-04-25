@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone, Mail, Share2, Send, Users, MessageCircle } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
+import { siteNav } from "@/lib/site-nav";
 
 const socialLinks = [
   { icon: Share2, href: "#", label: "LinkedIn" },
@@ -10,9 +11,6 @@ const socialLinks = [
   { icon: Users, href: "#", label: "Facebook" },
   { icon: Send, href: "#", label: "Instagram" },
 ];
-
-const navLinkKeys = ["home", "about", "policies", "products", "service", "contact"] as const;
-const navHrefs = ["#home", "#about", "#policies", "#sectors", "#services", "#contact"];
 
 export default function Footer() {
   const { t } = useLang();
@@ -53,8 +51,8 @@ export default function Footer() {
             <h4>{t.footer.navTitle}</h4>
             <ul>
               {navLabels.map((label, i) => (
-                <li key={navLinkKeys[i]}>
-                  <Link href={navHrefs[i]} id={`footer-link-${navLinkKeys[i]}`}>{label}</Link>
+                <li key={siteNav[i].key}>
+                  <Link href={siteNav[i].href} id={`footer-link-${siteNav[i].key}`}>{label}</Link>
                 </li>
               ))}
             </ul>
@@ -66,7 +64,7 @@ export default function Footer() {
             <ul>
               {t.footer.serviceLinks.map((label) => (
                 <li key={label}>
-                  <Link href="#services" id={`footer-service-${label.toLowerCase().replace(/ /g, "-")}`}>{label}</Link>
+                  <Link href="/service" id={`footer-service-${label.toLowerCase().replace(/ /g, "-")}`}>{label}</Link>
                 </li>
               ))}
             </ul>

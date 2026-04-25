@@ -36,10 +36,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className="hero-scroll-indicator" aria-hidden="true">
-        <span>{t.hero.scroll}</span>
-        <ChevronDown size={18} />
-      </div>
+
     </section>
   );
 }
