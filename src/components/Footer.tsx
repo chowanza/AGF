@@ -96,11 +96,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} AGF Group. {t.footer.copyright}</span>
-          <span>
-            <Link href="#" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none", marginRight: "1rem" }}>{t.footer.privacy}</Link>
-            <Link href="#" style={{ color: "rgba(255,255,255,0.4)", textDecoration: "none" }}>{t.footer.terms}</Link>
-          </span>
+          <span>© {new Date().getFullYear()} AMPER TECH. {t.footer.copyright}</span>
         </div>
       </div>
     </footer>

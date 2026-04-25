@@ -888,67 +888,221 @@ body {
 .delay-3 { animation-delay: 0.3s; }
 .delay-4 { animation-delay: 0.4s; }
 
-/* Responsive */
+/* ─────────────────────────────────────────────
+   RESPONSIVE — Tablet  (≤ 1024px)
+───────────────────────────────────────────── */
 @media (max-width: 1024px) {
+
+  /* Navbar */
+  .nav-pill {
+    max-width: 700px;
+  }
+  .nav-link {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.82rem;
+  }
+
+  /* Sectors */
   .sectors-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
+  .sector-name {
+    font-size: 1.25rem;
   }
+
+  /* Services */
+  .services-section {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+  .services-left {
+    padding: 3rem 2.5rem;
+  }
+  .services-right {
+    height: 400px;
+  }
+
+  /* Why AGF */
   .why-grid {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
   .why-right {
     order: -1;
+    min-height: 300px;
   }
   .why-img-main {
-    height: 300px;
+    height: 320px !important;
+  }
+  .why-img-badge {
+    bottom: -10px;
+    left: 10px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 }
 
+/* ─────────────────────────────────────────────
+   RESPONSIVE — Mobile  (≤ 768px)
+───────────────────────────────────────────── */
 @media (max-width: 768px) {
+
+  /* Navbar */
+  .nav-pill {
+    max-width: none;
+    flex: 1;
+    padding: 0.45rem 0.45rem 0.45rem 1rem;
+  }
   .nav-links {
     display: none;
   }
   .hamburger {
     display: flex;
   }
-  .services-section {
-    grid-template-columns: 1fr;
+  .nav-lang {
+    display: none; /* hidden on mobile — language is in the mobile drawer */
   }
-  .services-right {
-    height: 400px;
+
+  /* Hero */
+  .hero-content {
+    padding: 5rem 1.25rem 2rem;
   }
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .btn-primary,
+  .btn-outline {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Section padding */
+  .section {
+    padding: 3.5rem 1.25rem;
+  }
+  .section-header {
+    margin-bottom: 2.25rem;
+  }
+  .section-desc {
+    font-size: 0.95rem;
+  }
+
+  /* Sectors */
   .sectors-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
   }
+  .sector-card-content {
+    padding: 1.25rem;
+  }
+  .sector-name {
+    font-size: 1.1rem;
+  }
+  .sector-desc {
+    font-size: 0.8rem;
+  }
+
+  /* Services */
+  .services-section {
+    border-radius: 16px;
+  }
+  .services-left {
+    padding: 2.5rem 1.5rem;
+  }
+  .services-right {
+    height: 320px;
+  }
+
+  /* Why AGF */
+  .why-agf {
+    padding: 4rem 1.25rem;
+  }
+  .why-features {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .why-img-main {
+    height: 260px !important;
+    border-radius: 14px;
+  }
+  .why-img-badge {
+    bottom: 10px;
+    left: 10px;
+    padding: 0.85rem 1rem;
+  }
+  .why-img-badge strong {
+    font-size: 1.5rem;
+  }
+
+  /* Footer */
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+    padding-bottom: 2rem;
   }
   .footer-bottom {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-  .why-features {
-    grid-template-columns: 1fr;
-  }
-  .stats-bar {
-    gap: 1.5rem;
+  .footer {
+    padding: 3rem 1.25rem 1.5rem;
   }
 }
 
+/* ─────────────────────────────────────────────
+   RESPONSIVE — Small Mobile  (≤ 480px)
+───────────────────────────────────────────── */
 @media (max-width: 480px) {
+
+  /* Navbar */
+  .nav-wrapper {
+    padding: 0.75rem 1rem;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  /* Sectors — single column on very small screens */
   .sectors-grid {
     grid-template-columns: 1fr;
+    gap: 0.85rem;
   }
-  .hero-cta-group {
-    flex-direction: column;
-    align-items: stretch;
+  .sector-card {
+    aspect-ratio: 16 / 9;
   }
-  .btn-primary, .btn-outline {
-    justify-content: center;
+  .sector-name {
+    font-size: 1.2rem;
+  }
+
+  /* Services */
+  .services-left {
+    padding: 2rem 1.25rem;
+  }
+  .service-item-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* Why AGF */
+  .why-features {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
 }
