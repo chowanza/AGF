@@ -1,12 +1,12 @@
 export const translations = {
   es: {
     nav: {
-      home: "Home",
-      about: "About us",
-      policies: "Policies",
-      products: "Products",
-      service: "Service",
-      contact: "Contact us",
+      home: "Inicio",
+      about: "Nosotros",
+      policies: "Políticas",
+      products: "Sectores",
+      service: "Servicios",
+      contact: "Contacto",
     },
     hero: {
       badge: "🌐 Operamos en más de 50 países",
@@ -48,8 +48,8 @@ export const translations = {
     },
     services: {
       tag: "Lo que ofrecemos",
-      title: "Nuestro Servicios Logísticos Clave",
-      leftTitle: "Nuestro Servicios\nLogísticos Clave",
+      title: "Nuestros Servicios Logísticos Clave",
+      leftTitle: "Nuestros Servicios\nLogísticos Clave",
       cta: "Más información",
       items: [
         {

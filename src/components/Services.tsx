@@ -46,12 +46,12 @@ export default function Services() {
             </Link>
           </div>
           <div className="services-right" id="services-images" style={{ position: "relative" }}>
-            <Image 
-              src="/global_logistics.png" 
-              alt="Nuestros Servicios Logísticos" 
-              fill 
-              style={{ objectFit: "cover" }} 
-              sizes="(max-width: 768px) 100vw, 50vw" 
+            <Image
+              src="/global_logistics.png"
+              alt="Nuestros Servicios Logísticos"
+              fill
+              style={{ objectFit: "cover" }}
+              sizes="(max-width: 768px) 100vw, 50vw"
               priority
               quality={95}
             />
