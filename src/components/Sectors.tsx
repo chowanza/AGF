@@ -1,50 +1,69 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Flame, Mountain, Truck, HardHat } from "lucide-react";
+import { ArrowRight, Building2, HardHat, Pickaxe, Truck } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 
 const sectorImages = [
-  { image: "/petroleo_bg.png", alt: "Sector Petróleo y Gas", icon: Flame },
-  { image: "/mineria_bg.png", alt: "Sector Minería", icon: Mountain },
-  { image: "/transporte_bg.png", alt: "Sector Transporte", icon: Truck, highlighted: true },
-  { image: "/construccion_bg.png", alt: "Sector Construcción", icon: HardHat },
+  "/petroleo_bg.png",
+  "/mineria_bg.png",
+  "/transporte_bg.png",
+  "/construccion_bg.png",
 ];
+
+const sectorIcons = [Building2, Pickaxe, Truck, HardHat];
 
 export default function Sectors() {
   const { t } = useLang();
+
+  if (!t.sectors?.items?.length) return null;
+
   return (
-    <section className="section" id="sectors" style={{ background: "#fafaf5" }}>
+    <section id="sectors" className="section sectors-section">
       <div className="container">
         <div className="section-header">
-          <span className="section-tag" id="sectors-tag">{t.sectors.tag}</span>
-          <h2 className="section-title" id="sectors-title">{t.sectors.title}</h2>
+          <span className="section-tag">{t.sectors.tag}</span>
+          <h2 className="section-title">{t.sectors.title}</h2>
           <p className="section-desc">{t.sectors.desc}</p>
         </div>
+
         <div className="sectors-grid" id="sectors-grid">
-          {t.sectors.items.map((item, i) => {
-            const { image, alt, icon: Icon, highlighted } = sectorImages[i];
+          {t.sectors.items.slice(0, 4).map((item, i) => {
+            const Icon = sectorIcons[i] ?? Building2;
+
             return (
-              <div
-                key={item.id}
-                className={`sector-card ${highlighted ? "highlighted" : ""}`}
+              <article
+                key={item.id || i}
+                className="sector-card"
                 id={`sector-${item.id}`}
               >
-                <Image src={image} alt={alt} fill className="sector-card-img" sizes="(max-width: 900px) 50vw, 25vw" priority quality={90} style={{ objectFit: "cover" }} />
+                <Image
+                  src={sectorImages[i]}
+                  alt={item.name || "Sector"}
+                  fill
+                  className="sector-card-img"
+                  sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 25vw"
+                  priority={i < 2}
+                  quality={90}
+                />
                 <div className="sector-card-overlay" />
                 <div className="sector-card-content">
                   <div className="sector-card-header">
-                    <Icon size={22} strokeWidth={2.5} />
+                    <Icon size={20} strokeWidth={2.25} />
                     <h3 className="sector-name">{item.name}</h3>
                   </div>
                   <p className="sector-desc">{item.description}</p>
                 </div>
-              </div>
+              </article>
             );
           })}
         </div>
+
         <div className="sectors-cta">
-          <Link href="#contact" className="btn-primary" id="sectors-cta-btn">{t.sectors.cta}</Link>
+          <Link href="#contact" className="btn-primary">
+            {t.sectors.cta} <ArrowRight size={16} />
+          </Link>
         </div>
       </div>
     </section>
