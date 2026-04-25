@@ -58,7 +58,7 @@ export default function ContactPageContent() {
               ))}
             </ul>
             <div className="contact-actions">
-              <Link href="mailto:info@agfgrouph.com" className="btn-primary">
+              <Link href="mailto:agarcia@arkonv.com" className="btn-primary">
                 {t.contactPage.primaryCta}
               </Link>
               <Link href="tel:8322695511" className="btn-outline contact-btn-outline">
