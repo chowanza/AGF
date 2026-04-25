@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone, Mail, Share2, Send, Users, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Globe, Share2, Send, Users, MessageCircle } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 import { siteNav } from "@/lib/site-nav";
 
@@ -30,7 +30,6 @@ export default function Footer() {
 
       <div style={{ position: "relative", zIndex: 2 }}>
         <div className="footer-grid">
-          {/* Brand */}
           <div className="footer-brand">
             <Image src="/logo.svg" alt="AGF Group Logo" width={121} height={34} style={{ filter: "brightness(0) invert(1)" }} />
             <p>{t.footer.desc}</p>
@@ -46,7 +45,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Navigation */}
           <div className="footer-col">
             <h4>{t.footer.navTitle}</h4>
             <ul>
@@ -58,7 +56,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
           <div className="footer-col">
             <h4>{t.footer.servicesTitle}</h4>
             <ul>
@@ -70,7 +67,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div className="footer-col">
             <h4>{t.footer.contactTitle}</h4>
             <div className="footer-contact-item">
@@ -79,14 +75,18 @@ export default function Footer() {
             </div>
             <div className="footer-contact-item">
               <Phone size={14} />
-              <span>+58 212 555 0000</span>
+              <span>{t.footer.phone}</span>
             </div>
             <div className="footer-contact-item">
               <Mail size={14} />
-              <span>info@agfgroup.com</span>
+              <span>{t.footer.email}</span>
+            </div>
+            <div className="footer-contact-item">
+              <Globe size={14} />
+              <span>{t.footer.website}</span>
             </div>
             <div style={{ marginTop: "1.5rem" }}>
-              <Link href="mailto:info@agfgroup.com" className="btn-primary" id="footer-cta-btn" style={{ fontSize: "0.8rem", padding: "0.65rem 1.4rem" }}>
+              <Link href="/contact-us" className="btn-primary" id="footer-cta-btn" style={{ fontSize: "0.8rem", padding: "0.65rem 1.4rem" }}>
                 {t.footer.ctaBtn}
               </Link>
             </div>
@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} AMPER TECH. {t.footer.copyright}</span>
+          <span>© {new Date().getFullYear()} AGF Group LLC. {t.footer.copyright}</span>
         </div>
       </div>
     </footer>

@@ -1,12 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import PlaceholderPageContent from "@/components/PlaceholderPageContent";
+import PoliciesPageContent from "@/components/PoliciesPageContent";
 
 export default function PoliciesPage() {
   return (
     <>
       <Navbar />
-      <PlaceholderPageContent title="Policies" />
+      <PoliciesPageContent />
       <Footer />
     </>
   );

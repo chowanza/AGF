@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 
 export default function Hero() {
@@ -28,15 +28,14 @@ export default function Hero() {
           {t.hero.subtitle}
         </p>
         <div className="hero-cta-group animate-in delay-3">
-          <Link href="#services" className="btn-primary" id="hero-cta-primary">
+          <Link href="/service" className="btn-primary" id="hero-cta-primary">
             {t.hero.cta1} <ArrowRight size={18} />
           </Link>
-          <Link href="#contact" className="btn-outline" id="hero-cta-secondary">
+          <Link href="/contact-us" className="btn-outline" id="hero-cta-secondary">
             {t.hero.cta2}
           </Link>
         </div>
       </div>
-
     </section>
   );
 }

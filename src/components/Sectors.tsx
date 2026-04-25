@@ -61,7 +61,7 @@ export default function Sectors() {
         </div>
 
         <div className="sectors-cta">
-          <Link href="#contact" className="btn-primary">
+          <Link href="/products" className="btn-primary">
             {t.sectors.cta} <ArrowRight size={16} />
           </Link>
         </div>

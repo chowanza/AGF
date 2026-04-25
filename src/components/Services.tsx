@@ -41,7 +41,7 @@ export default function Services() {
                 </div>
               ))}
             </div>
-            <Link href="#contact" className="btn-primary" style={{ alignSelf: "flex-start" }} id="services-more-btn">
+            <Link href="/service" className="btn-primary" style={{ alignSelf: "flex-start" }} id="services-more-btn">
               {t.services.cta} <ArrowRight size={16} />
             </Link>
           </div>

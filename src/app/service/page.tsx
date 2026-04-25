@@ -1,12 +1,12 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import PlaceholderPageContent from "@/components/PlaceholderPageContent";
+import ServicePageContent from "@/components/ServicePageContent";
 
 export default function ServicePage() {
   return (
     <>
       <Navbar />
-      <PlaceholderPageContent title="Service" />
+      <ServicePageContent />
       <Footer />
     </>
   );
