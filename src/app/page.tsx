@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import StatsBar from "@/components/StatsBar";
+
 import Sectors from "@/components/Sectors";
 import Services from "@/components/Services";
 import WhyAGF from "@/components/WhyAGF";
@@ -12,7 +12,7 @@ export default function HomePage() {
       <Navbar />
       <main>
         <Hero />
-        <StatsBar />
+
         <Sectors />
         <Services />
         <WhyAGF />

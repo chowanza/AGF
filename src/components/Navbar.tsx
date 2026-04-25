@@ -3,93 +3,120 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, Globe } from "lucide-react";
-
-const navLinks = [
-  { label: "Home", href: "#home", active: true },
-  { label: "About us", href: "#about" },
-  { label: "Policies", href: "#policies" },
-  { label: "Products", href: "#sectors" },
-  { label: "Services", href: "#services" },
-  { label: "Contact us", href: "#contact" },
-];
+import { Menu, X } from "lucide-react";
+import { useLang } from "@/context/LanguageContext";
 
 export default function Navbar() {
+  const { lang, t, toggleLang } = useLang();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
+  const navLinks = [
+    { key: "home", label: t.nav.home, href: "#home" },
+    { key: "about", label: t.nav.about, href: "#about" },
+    { key: "policies", label: t.nav.policies, href: "#policies" },
+    { key: "products", label: t.nav.products, href: "#sectors" },
+    { key: "service", label: t.nav.service, href: "#services" },
+    { key: "contact", label: t.nav.contact, href: "#contact" },
+  ];
+
+  /* Track active section on scroll */
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    const sections = ["home", "about", "sectors", "services", "contact"];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveSection(entry.target.id);
+        });
+      },
+      { threshold: 0.4 }
+    );
+    sections.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
   }, []);
+
+  const isActive = (key: string) => {
+    if (key === "home") return activeSection === "home";
+    if (key === "about") return activeSection === "about";
+    if (key === "products") return activeSection === "sectors";
+    if (key === "service") return activeSection === "services";
+    if (key === "contact") return activeSection === "contact";
+    return false;
+  };
 
   return (
     <>
-      <nav
-        className="navbar"
-        style={{
-          boxShadow: scrolled
-            ? "0 4px 24px rgba(0,0,0,0.12)"
-            : "0 2px 20px rgba(0,0,0,0.06)",
-        }}
-      >
-        {/* Logo */}
-        <Link href="#home" className="navbar-logo" id="nav-logo">
-          <Image
-            src="/logo.svg"
-            alt="AGF Group Logo"
-            width={121}
-            height={34}
-            priority
-          />
-        </Link>
+      {/* ─── Desktop Navbar ─── */}
+      <header className="nav-wrapper" id="main-navbar">
+        {/* Pill container */}
+        <div className="nav-pill">
+          {/* Logo */}
+          <Link href="#home" className="nav-logo" id="nav-logo">
+            <Image src="/logo.svg" alt="AGF Group" width={110} height={32} priority />
+          </Link>
 
-        {/* Desktop Nav */}
-        <ul className="navbar-nav" id="desktop-nav">
-          {navLinks.map((link) => (
-            <li key={link.label}>
-              <Link
-                href={link.href}
-                className={link.active ? "active" : ""}
-                id={`nav-${link.label.toLowerCase().replace(" ", "-")}`}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+          {/* Links */}
+          <ul className="nav-links" id="desktop-nav">
+            {navLinks.map((link) => (
+              <li key={link.key}>
+                <Link
+                  href={link.href}
+                  id={`nav-${link.key}`}
+                  className={`nav-link ${isActive(link.key) ? "nav-link--active" : ""}`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-        {/* Actions */}
-        <div className="navbar-actions">
-          <button className="lang-toggle" id="lang-toggle" aria-label="Toggle language">
-            <Globe size={12} style={{ display: "inline", marginRight: "4px" }} />
-            ES
-          </button>
-          <button
-            className="hamburger"
-            id="hamburger-btn"
-            aria-label="Open menu"
-            onClick={() => setMobileOpen(!mobileOpen)}
-          >
-            {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+        {/* Language toggle — outside the pill */}
+        <button
+          className="nav-lang"
+          id="lang-toggle"
+          onClick={toggleLang}
+          aria-label="Toggle language"
+        >
+          {lang === "es" ? "EN" : "ES"}
+        </button>
+
+        {/* Hamburger — mobile only */}
+        <button
+          className="hamburger"
+          id="hamburger-btn"
+          aria-label="Open menu"
+          onClick={() => setMobileOpen(!mobileOpen)}
+        >
+          {mobileOpen ? <X size={22} color="#333" /> : <Menu size={22} color="#333" />}
+        </button>
+      </header>
+
+      {/* ─── Mobile Drawer ─── */}
+      <div className={`mobile-menu ${mobileOpen ? "open" : ""}`} id="mobile-menu">
+        <div className="mobile-menu-header">
+          <Image src="/logo.svg" alt="AGF Group" width={100} height={28} />
+          <button onClick={() => setMobileOpen(false)} aria-label="Close menu">
+            <X size={22} color="#333" />
           </button>
         </div>
-      </nav>
-
-      {/* Mobile Menu */}
-      <div className={`mobile-menu ${mobileOpen ? "open" : ""}`} id="mobile-menu">
         {navLinks.map((link) => (
           <Link
-            key={link.label}
+            key={link.key}
             href={link.href}
-            className={link.active ? "active" : ""}
+            className={`mobile-link ${isActive(link.key) ? "mobile-link--active" : ""}`}
             onClick={() => setMobileOpen(false)}
-            id={`mobile-nav-${link.label.toLowerCase().replace(" ", "-")}`}
+            id={`mobile-nav-${link.key}`}
           >
             {link.label}
           </Link>
         ))}
+        <button className="mobile-lang" onClick={toggleLang} id="mobile-lang-toggle">
+          {lang === "es" ? "🇺🇸 English" : "🇻🇪 Español"}
+        </button>
       </div>
     </>
   );

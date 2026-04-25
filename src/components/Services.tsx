@@ -1,63 +1,38 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { useLang } from "@/context/LanguageContext";
 
-const serviceItems = [
-  {
-    id: "air-freight",
-    iconSrc: "/airplane_icon.svg",
-    iconAlt: "Ícono avión - carga aérea",
-    title: "Carga Aérea",
-    description:
-      "Servicio desde/hacia cualquier parte del mundo. Rapidez, seguridad y fiabilidad. Manejo de carga general y especial, incluyendo productos perecederos y peligrosos.",
-  },
-  {
-    id: "sea-freight",
-    iconSrc: "/boat_icon.svg",
-    iconAlt: "Ícono barco - carga marítima",
-    title: "Carga Marítima",
-    description:
-      "Cobertura global. Transporte FCL (Carga Completa) y LCL (Carga Consolidada). Cobertura global. Asesoramiento en aduanas y documentación.",
-  },
-];
+const iconSrcs = ["/airplane_icon.svg", "/boat_icon.svg"];
+const iconAlts = ["Airplane icon - Air freight", "Boat icon - Sea freight"];
 
 export default function Services() {
+  const { t } = useLang();
   return (
     <section id="services" style={{ padding: "5rem 2rem" }}>
       <div className="container">
         <div className="section-header">
-          <span className="section-tag" id="services-tag">
-            Lo que ofrecemos
-          </span>
-          <h2 className="section-title" id="services-title">
-            Nuestro Servicios Logísticos Clave
-          </h2>
+          <span className="section-tag" id="services-tag">{t.services.tag}</span>
+          <h2 className="section-title" id="services-title">{t.services.title}</h2>
         </div>
-
         <div className="services-section" id="services-grid">
-          {/* Left - green panel */}
+          {/* Left green panel */}
           <div className="services-left">
             <h3
               className="section-title"
               style={{ color: "white", textAlign: "left", marginBottom: "2rem" }}
               id="services-left-title"
             >
-              Nuestro Servicios
-              <br />
-              Logísticos Clave
+              {t.services.leftTitle.split("\n").map((line, i) => (
+                <span key={i}>{line}{i === 0 && <br />}</span>
+              ))}
             </h3>
-
             <div className="service-items">
-              {serviceItems.map((item) => (
+              {t.services.items.map((item, i) => (
                 <div className="service-item" key={item.id} id={`service-${item.id}`}>
                   <div className="service-item-icon">
-                    <Image
-                      src={item.iconSrc}
-                      alt={item.iconAlt}
-                      width={36}
-                      height={36}
-                      style={{ objectFit: "contain" }}
-                    />
+                    <Image src={iconSrcs[i]} alt={iconAlts[i]} width={36} height={36} style={{ objectFit: "contain" }} />
                   </div>
                   <div className="service-item-text">
                     <h4>{item.title}</h4>
@@ -66,38 +41,20 @@ export default function Services() {
                 </div>
               ))}
             </div>
-
-            <Link
-              href="#contact"
-              className="btn-primary"
-              style={{ alignSelf: "flex-start" }}
-              id="services-more-btn"
-            >
-              Más información
-              <ArrowRight size={16} />
+            <Link href="#contact" className="btn-primary" style={{ alignSelf: "flex-start" }} id="services-more-btn">
+              {t.services.cta} <ArrowRight size={16} />
             </Link>
           </div>
-
-          {/* Right - real image from Figma assets */}
-          <div className="services-right" id="services-images">
-            <div style={{ overflow: "hidden", position: "relative" }}>
-              <Image
-                src="/nuestros_servicios_logisticos.png"
-                alt="Servicios logísticos de AGF Group - avión y puerto"
-                fill
-                style={{ objectFit: "cover", objectPosition: "top" }}
-                sizes="50vw"
-              />
-            </div>
-            <div style={{ overflow: "hidden", position: "relative" }}>
-              <Image
-                src="/nuestros_servicios_logisticos.png"
-                alt="Servicios logísticos de AGF Group - operaciones portuarias"
-                fill
-                style={{ objectFit: "cover", objectPosition: "bottom" }}
-                sizes="50vw"
-              />
-            </div>
+          <div className="services-right" id="services-images" style={{ position: "relative" }}>
+            <Image 
+              src="/global_logistics.png" 
+              alt="Nuestros Servicios Logísticos" 
+              fill 
+              style={{ objectFit: "cover" }} 
+              sizes="(max-width: 768px) 100vw, 50vw" 
+              priority
+              quality={95}
+            />
           </div>
         </div>
       </div>

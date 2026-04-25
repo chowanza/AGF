@@ -1,11 +1,13 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import { useLang } from "@/context/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLang();
   return (
     <section className="hero" id="home">
-      {/* Background Image */}
       <Image
         src="/home_bg.png"
         alt="Puerto marítimo con grúas y contenedores - AGF Group"
@@ -15,41 +17,27 @@ export default function Hero() {
         style={{ objectFit: "cover", objectPosition: "center" }}
         sizes="100vw"
       />
-      {/* Overlay */}
       <div className="hero-bg" />
-
-      {/* Content */}
       <div className="hero-content">
-        <div className="animate-in">
-          <span className="hero-badge" id="hero-badge">
-            🌐 Operamos en más de 50 países
-          </span>
-        </div>
-
         <h1 className="hero-title animate-in delay-1" id="hero-title">
-          Soluciones Globales de
+          {t.hero.title1}
           <br />
-          <span>Cadena de Suministro</span>
+          <span>{t.hero.title2}</span>
         </h1>
-
         <p className="hero-subtitle animate-in delay-2" id="hero-subtitle">
-          Petróleo y Gas, Minería, Transporte y Construcción
+          {t.hero.subtitle}
         </p>
-
         <div className="hero-cta-group animate-in delay-3">
           <Link href="#services" className="btn-primary" id="hero-cta-primary">
-            Explora Nuestros Servicios
-            <ArrowRight size={18} />
+            {t.hero.cta1} <ArrowRight size={18} />
           </Link>
           <Link href="#contact" className="btn-outline" id="hero-cta-secondary">
-            Contáctanos
+            {t.hero.cta2}
           </Link>
         </div>
       </div>
-
-      {/* Scroll indicator */}
       <div className="hero-scroll-indicator" aria-hidden="true">
-        <span>Scroll</span>
+        <span>{t.hero.scroll}</span>
         <ChevronDown size={18} />
       </div>
     </section>
