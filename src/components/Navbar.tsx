@@ -53,7 +53,14 @@ export default function Navbar() {
           onClick={toggleLang}
           aria-label="Toggle language"
         >
-          {lang === "es" ? "EN" : "ES"}
+          <Image 
+            src={t.nav.langToggleIcon} 
+            alt={t.nav.langToggleLabel} 
+            width={20} 
+            height={14} 
+            className="lang-flag"
+          />
+          <span>{t.nav.langToggleLabel}</span>
         </button>
 
         <button
@@ -85,7 +92,14 @@ export default function Navbar() {
           </Link>
         ))}
         <button className="mobile-lang" onClick={toggleLang} id="mobile-lang-toggle">
-          {lang === "es" ? "English" : "Espanol"}
+          <Image 
+            src={t.nav.langToggleIcon} 
+            alt={t.nav.langToggleLabel} 
+            width={22} 
+            height={16} 
+            className="lang-flag"
+          />
+          <span>{lang === "es" ? "English" : "Español"}</span>
         </button>
       </div>
     </>

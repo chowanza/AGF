@@ -7,12 +7,14 @@ export const translations = {
       products: "Productos",
       service: "Servicios",
       contact: "Contacto",
+      langToggleIcon: "/usa_icon.png",
+      langToggleLabel: "EN",
     },
     hero: {
       badge: "Operamos en mas de 50 paises",
-      title1: "Soluciones Globales de",
-      title2: "Cadena de Suministro",
-      subtitle: "Petroleo y Gas, Mineria, Transporte y Construccion",
+      title1: "LIDER EN SOLUCIONES",
+      title2: "PARA LAS INDUSTRIAS",
+      subtitle: "PETRÓLEO Y GAS, TRANSPORTE, SEGURIDAD, MINERÍA Y CONSTRUCCIÓN",
       cta1: "Explora Nuestros Servicios",
       cta2: "Contactanos",
     },
@@ -51,16 +53,22 @@ export const translations = {
       cta: "Mas informacion",
       items: [
         {
-          id: "air-freight",
-          title: "Carga Aerea",
+          id: "procurement",
+          title: "Procura y Abastecimiento",
           description:
-            "Servicio desde/hacia cualquier parte del mundo. Rapidez, seguridad y fiabilidad. Manejo de carga general y especial, incluyendo productos perecederos y peligrosos.",
+            "Recepción de requisición, evaluación de alternativas y selección de las mejores opciones globales para asegurar el cumplimiento de especificaciones y tiempos de entrega.",
         },
         {
-          id: "sea-freight",
-          title: "Carga Maritima",
+          id: "logistics",
+          title: "Logística y Seguimiento",
           description:
-            "Cobertura global. Transporte FCL (Carga Completa) y LCL (Carga Consolidada). Cobertura global. Asesoramiento en aduanas y documentacion.",
+            "Hacemos seguimiento continuo a sus órdenes, verificamos los estándares de calidad y prestamos servicios de recepción y almacenamiento antes del despacho.",
+        },
+        {
+          id: "door-to-door",
+          title: "Servicio Puerta a Puerta",
+          description:
+            "Reducimos la presión operativa de nuestros clientes entregando soluciones directas desde la fábrica hasta sus instalaciones (Door-to-Door).",
         },
       ],
     },
@@ -106,10 +114,10 @@ export const translations = {
       eyebrow: "Sobre Nosotros",
       title: "Construimos relaciones de suministro con criterio tecnico y ejecucion confiable.",
       intro:
-        "AGF Group LLC fue formada en Houston, Texas, para atender mercados emergentes industrializados y mercados historicos conectados entre si, con foco en el continente americano y especialmente en Latinoamerica.",
+        "AGF Group, C.A. provee soluciones para las industrias de Petróleo y Gas, Transporte, Seguridad, Minería y Construcción. Nuestro objetivo principal es entregar soluciones innovadoras diseñadas para cumplir con los requerimientos de los proyectos de nuestros clientes.",
       companyCardTitle: "Base operativa",
       companyCardBody:
-        "26623 Pampas Grass Ln, Katy, Texas 77493. Desde esta ubicacion coordinamos procura, suministro y apoyo logistico para clientes industriales.",
+        "Av. José A. Anzoátegui, No 17, Oasis, Anaco. Estado Anzoátegui, Venezuela. Desde esta ubicación coordinamos procura, suministro y apoyo logístico para clientes industriales.",
       sections: {
         whoWeAre: {
           title: "Quienes somos",
@@ -136,6 +144,10 @@ export const translations = {
           body:
             "Nuestro sistema de gestion de calidad garantiza el cumplimiento estricto de normas y procedimientos para satisfacer los estandares del cliente, reducir impactos ambientales y proteger la seguridad y salud ocupacional de nuestro equipo.",
         },
+        faja: {
+          title: "Faja Petrolífera del Orinoco",
+          body: "AGF Group provee soluciones estratégicas, equipos y logística avanzada para las principales empresas mixtas que operan en la Faja Petrolífera del Orinoco, incluyendo Petroguarico, Petrocuragua, Petrokariña, Petrolera Vencupet, Petrolera Sinovensa, Petrodelta, Petropiar, entre otras. Nuestro soporte fortalece la infraestructura upstream, garantizando continuidad operativa.",
+        },
       },
       qualityPillars: [
         "Satisfaccion del cliente",
@@ -153,6 +165,17 @@ export const translations = {
       intro:
         "Las politicas de AGF Group organizan nuestro trabajo en responsabilidad social, prevencion, seguridad, ambiente y calidad para sostener operaciones consistentes y relaciones confiables con clientes, personal y comunidades.",
       items: [
+        {
+          id: "ethics-policy",
+          title: "Política de Ética e Integridad",
+          body:
+            "La ética, integridad y el cumplimiento son fundamentales en nuestros valores. Nuestro personal está calificado para mantener altos estándares de transparencia y confianza en cada proceso que gestionamos.",
+          bullets: [
+            "Combatir la corrupción (soborno, fraude, extorsión y falsificación) y el acoso laboral.",
+            "Mantener principios éticos firmes frente a la responsabilidad ambiental.",
+            "Asegurar un trato equitativo sin discriminación por raza, color, religión, sexo o discapacidad física.",
+          ],
+        },
         {
           id: "social-responsibility",
           title: "Politicas de responsabilidad social",
@@ -176,25 +199,14 @@ export const translations = {
           ],
         },
         {
-          id: "security-policy",
-          title: "Politica de seguridad",
+          id: "hse-policy",
+          title: "Política de Salud, Seguridad y Ambiente (HSE)",
           body:
-            "Nuestras politicas de seguridad establecen lineamientos y responsabilidades para el manejo de desechos peligrosos y no peligrosos, efluentes, materiales utilizados y derivados de las actividades realizadas por nuestro personal.",
+            "Nuestra política HSE establece lineamientos para el manejo adecuado de desechos e impactos, protegiendo a nuestro personal y al medio ambiente en todas las actividades. Nuestro sistema ambiental opera como parte integral de la gestión de calidad.",
           bullets: [
-            "Asegurar un manejo apropiado que proteja al personal y al medio ambiente involucrado.",
-            "Evitar actos o condiciones inseguras que afecten la integridad del trabajador.",
-            "Mantener procedimientos claros para materiales y residuos de cualquier naturaleza.",
-          ],
-        },
-        {
-          id: "environmental-policy",
-          title: "Politicas ambientales",
-          body:
-            "Nuestro sistema ambiental forma parte integral del sistema de gestion de calidad y opera para minimizar cualquier efecto negativo sobre el ambiente, promoviendo sensibilizacion permanente del personal para su conservacion.",
-          bullets: [
-            "Minimizar cualquier riesgo ambiental y mejorar continuamente el desempeno ambiental.",
-            "Optimizar impactos ambientales y evitar la degradacion del entorno.",
-            "Integrar la gestion ambiental a la operacion diaria de la organizacion.",
+            "Asegurar el manejo apropiado de efluentes y materiales para garantizar la seguridad operativa.",
+            "Minimizar los efectos negativos y promover la sensibilización ambiental en todo nuestro personal.",
+            "Prevenir actos y condiciones inseguras, optimizando los impactos y evitando la degradación del entorno.",
           ],
         },
         {
@@ -287,6 +299,17 @@ export const translations = {
                 "Empaques y Juntas de Expansion",
               ],
             },
+            {
+              title: "Sistemas Midstream y Downstream",
+              items: [
+                "Facilidades de Producción Temprana",
+                "Tratamiento de Crudo y Deshidratación",
+                "Sistemas de Compresión de Gas",
+                "Separadores Bi y Trifásicos",
+                "Tratamiento de Agua Producida",
+                "Plantas Criogénicas",
+              ],
+            },
           ],
         },
         {
@@ -367,13 +390,64 @@ export const translations = {
             },
           ],
         },
+        {
+          id: "ppe",
+          title: "Equipos de Protección Personal (PPE)",
+          groups: [
+            {
+              title: "Protección facial, ocular y craneal",
+              items: [
+                "Mascarillas y Respiradores",
+                "Lentes de Seguridad",
+                "Cascos y Bump Caps",
+                "Protectores Faciales",
+              ],
+            },
+            {
+              title: "Protección corporal y extremidades",
+              items: [
+                "Calzado de Seguridad",
+                "Guantes (Cuero, Sintéticos, Nitrilo)",
+                "Arneses y Equipos contra Caídas",
+                "Ropa Ignífuga y Overoles",
+                "Protección Auditiva",
+              ],
+            },
+          ],
+        },
+        {
+          id: "global-market",
+          title: "Mercado Global y Materiales",
+          groups: [
+            {
+              title: "Transmisión de potencia y control",
+              items: [
+                "Rodamientos y Cojinetes",
+                "Cadenas y Correas",
+                "Poleas y Piñones",
+                "Válvulas de Control Automático",
+                "Interruptores y Transductores",
+              ],
+            },
+            {
+              title: "Materiales y consumibles",
+              items: [
+                "Bridas, Conexiones y Tuberías",
+                "Empacaduras y Sellos",
+                "Tornillería y Sujetadores",
+                "Lubricantes y Químicos Industriales",
+                "Instrumentación de Medición",
+              ],
+            },
+          ],
+        },
       ],
     },
     servicePage: {
       eyebrow: "Servicios",
       title: "Un proceso integrado para comprar, verificar, movilizar y entregar con control.",
       intro:
-        "AGF Group LLC ofrece un trabajo integral en el que cada etapa de la cadena de suministro se considera para entregar la mejor alternativa al cliente, con seguimiento operativo, comparacion tecnica y soporte logistico hasta el cierre del ciclo.",
+        "AGF Group ofrece un trabajo integral en el que cada etapa de la cadena de suministro se considera para entregar la mejor alternativa al cliente, con seguimiento operativo, comparacion tecnica y soporte logistico hasta el cierre del ciclo.",
       overview:
         "Nuestro enfoque combina procura, evaluacion de alternativas, seguimiento de ordenes, almacenamiento, trazabilidad y servicio Door-to-Door para reducir presion operativa sobre el cliente.",
       steps: [
@@ -426,9 +500,9 @@ export const translations = {
         "Comparta su requerimiento con especificaciones, tiempos de entrega y alcance operativo. Nuestro equipo puede evaluar alternativas y responder con una ruta de atencion adecuada.",
       detailsTitle: "Informacion de contacto",
       details: [
-        { id: "address", label: "Direccion", value: "26623 Pampas Grass Ln, Katy, Texas 77493" },
-        { id: "phone", label: "Telefono", value: "832-269-5511" },
-        { id: "email", label: "Correo", value: "agarcia@arkonv.com" },
+        { id: "address", label: "Direccion", value: "Av. José A. Anzoátegui, No 17, Oasis,\nAnaco. Estado Anzoátegui, Venezuela." },
+        { id: "phone", label: "Telefono", value: "+58 282-4247906\n+58 414-8390026" },
+        { id: "email", label: "Correo", value: "sales@agfgrouph.com" },
         { id: "website", label: "Sitio web", value: "agfgrouph.com" },
       ],
       requestTitle: "Que incluir en su solicitud",
@@ -447,19 +521,19 @@ export const translations = {
       navTitle: "Navegacion",
       servicesTitle: "Servicios",
       contactTitle: "Contacto",
-      address: "26623 Pampas Grass Ln\nKaty, Texas 77493",
-      phone: "832-269-5511",
-      email: "agarcia@arkonv.com",
+      address: "Av. José A. Anzoátegui, No 17, Oasis\nAnaco. Estado Anzoátegui, Venezuela",
+      phone: "+58 282-4247906",
+      email: "sales@agfgrouph.com",
       website: "agfgrouph.com",
       ctaBtn: "Envianos un mensaje",
       copyright: "Todos los derechos reservados.",
       serviceLinks: [
-        "Carga Aerea",
-        "Carga Maritima",
-        "Transporte Terrestre",
-        "Agencia Aduanal",
-        "Almacenamiento",
-        "Logistica Integral",
+        "Procura y Abastecimiento",
+        "Evaluación de Alternativas",
+        "Logística y Seguimiento",
+        "Almacenamiento y Verificación",
+        "Servicio Puerta a Puerta",
+        "Cierre del Ciclo",
       ],
     },
   },
@@ -471,12 +545,14 @@ export const translations = {
       products: "Products",
       service: "Service",
       contact: "Contact us",
+      langToggleIcon: "/venezuela_icon.png",
+      langToggleLabel: "ES",
     },
     hero: {
       badge: "We operate in more than 50 countries",
-      title1: "Global Supply Chain",
-      title2: "Solutions",
-      subtitle: "Oil & Gas, Mining, Transport and Construction",
+      title1: "LEADER IN SOLUTIONS",
+      title2: "FOR INDUSTRIES",
+      subtitle: "OIL & GAS, TRANSPORTATION, SECURITY, MINING AND CONSTRUCTION",
       cta1: "Explore Our Services",
       cta2: "Contact Us",
     },
@@ -515,16 +591,22 @@ export const translations = {
       cta: "More information",
       items: [
         {
-          id: "air-freight",
-          title: "Air Freight",
+          id: "procurement",
+          title: "Procurement & Sourcing",
           description:
-            "Service to/from anywhere in the world. Speed, security and reliability. Handling of general and special cargo, including perishable and hazardous goods.",
+            "Requisition intake, alternative evaluation, and selection of the best global options to ensure compliance with specifications and delivery times.",
         },
         {
-          id: "sea-freight",
-          title: "Sea Freight",
+          id: "logistics",
+          title: "Logistics & Tracking",
           description:
-            "Global coverage. FCL (Full Container Load) and LCL (Less than Container Load) transport. Global coverage. Customs and documentation assistance.",
+            "We continuously follow up on your orders, verify quality standards, and provide receiving and warehousing services prior to dispatch.",
+        },
+        {
+          id: "door-to-door",
+          title: "Door-to-Door Service",
+          description:
+            "We reduce operational pressure for our clients by delivering direct solutions from the factory to your facilities (Door-to-Door).",
         },
       ],
     },
@@ -570,10 +652,10 @@ export const translations = {
       eyebrow: "About Us",
       title: "We build supply relationships with technical judgment and reliable execution.",
       intro:
-        "AGF Group LLC was formed in Houston, Texas to serve emerging industrial markets and established connected markets across the Americas, with particular focus on Latin America.",
+        "AGF Group, C.A. provide procurement solutions to Oil & Gas, transportation, mining, and construction industry. Our main goal is to deliver innovative solutions designed to meet our customers project requirements.",
       companyCardTitle: "Operating base",
       companyCardBody:
-        "26623 Pampas Grass Ln, Katy, Texas 77493. From this location we coordinate procurement, supply, and logistics support for industrial clients.",
+        "Av. José A. Anzoátegui, No 17, Oasis, Anaco. Estado Anzoátegui, Venezuela. From this location we coordinate procurement, supply, and logistics support for industrial clients.",
       sections: {
         whoWeAre: {
           title: "Who we are",
@@ -600,6 +682,10 @@ export const translations = {
           body:
             "Our quality management system ensures strict compliance with standards and procedures to meet client expectations, reduce environmental impact, and protect the occupational health and safety of our team.",
         },
+        faja: {
+          title: "Orinoco Oil Belt",
+          body: "AGF Group provides strategic solutions, equipment, and advanced logistics to major joint ventures operating in the Orinoco Oil Belt, including Petroguarico, Petrocuragua, Petrokariña, Petrolera Vencupet, Petrolera Sinovensa, Petrodelta, and Petropiar. Our support strengthens upstream infrastructure and guarantees operational continuity.",
+        },
       },
       qualityPillars: [
         "Customer satisfaction",
@@ -617,6 +703,17 @@ export const translations = {
       intro:
         "AGF Group policies organize our work across social responsibility, prevention, safety, environment, and quality to sustain consistent operations and reliable relationships with clients, personnel, and communities.",
       items: [
+        {
+          id: "ethics-policy",
+          title: "Ethics and Integrity Policy",
+          body:
+            "Ethics, integrity, and compliance are fundamental to our values. Our personnel are highly qualified to maintain top standards of transparency and trust in every process we manage.",
+          bullets: [
+            "Combat corruption (bribery, fraud, exploitation, extortion, misrepresentation) and workplace harassment.",
+            "Maintain strong ethical principles regarding environmental responsibility.",
+            "Ensure fair treatment without discrimination by race, color, religion, sex, age, or physical impairment.",
+          ],
+        },
         {
           id: "social-responsibility",
           title: "Social responsibility policy",
@@ -640,25 +737,14 @@ export const translations = {
           ],
         },
         {
-          id: "security-policy",
-          title: "Safety policy",
+          id: "hse-policy",
+          title: "Health, Safety, and Environment (HSE) Policy",
           body:
-            "Our safety policies define guidelines and responsibilities for handling hazardous and non-hazardous waste, effluents, used materials, and all derivatives of activities performed by our personnel.",
+            "Our HSE policy establishes guidelines for appropriate waste and impact management, protecting our personnel and the environment in all activities. Our environmental system is an integral part of our quality management.",
           bullets: [
-            "Ensure appropriate handling that protects personnel and the surrounding environment.",
-            "Prevent unsafe acts or conditions that could affect worker integrity.",
-            "Maintain clear procedures for materials and waste of any nature.",
-          ],
-        },
-        {
-          id: "environmental-policy",
-          title: "Environmental policy",
-          body:
-            "Our environmental system is an integral part of the quality management system and is designed to minimize negative environmental effects while constantly promoting environmental awareness among personnel.",
-          bullets: [
-            "Minimize environmental risk and improve environmental performance.",
-            "Optimize environmental impacts and avoid degradation.",
-            "Integrate environmental management into daily operations.",
+            "Ensure appropriate handling of effluents and materials to guarantee operational safety.",
+            "Minimize negative effects and continually promote environmental awareness among all personnel.",
+            "Prevent unsafe acts and conditions, optimizing impacts and avoiding degradation of the surroundings.",
           ],
         },
         {
@@ -751,6 +837,17 @@ export const translations = {
                 "Gaskets and Expansion Joints",
               ],
             },
+            {
+              title: "Midstream and Downstream Systems",
+              items: [
+                "Early Production Facilities",
+                "Oil Treatment and Dehydration",
+                "Gas Compression Systems",
+                "Two and Three Phase Separators",
+                "Produced Water Treatment",
+                "Cryogenic Plants",
+              ],
+            },
           ],
         },
         {
@@ -831,13 +928,64 @@ export const translations = {
             },
           ],
         },
+        {
+          id: "ppe",
+          title: "Personal Protective Equipment",
+          groups: [
+            {
+              title: "Face, Eye, and Head Protection",
+              items: [
+                "Masks and Respirators",
+                "Safety Glasses and Goggles",
+                "Hard Hats and Bump Caps",
+                "Faceshields",
+              ],
+            },
+            {
+              title: "Body and Extremity Protection",
+              items: [
+                "Safety Footwear",
+                "Gloves (Leather, Synthetic, Nitrile)",
+                "Harnesses and Fall Protection",
+                "Flame Resistant Clothing and Coveralls",
+                "Hearing Protection",
+              ],
+            },
+          ],
+        },
+        {
+          id: "global-market",
+          title: "Global Market & Materials",
+          groups: [
+            {
+              title: "Power Transmission and Control",
+              items: [
+                "Bearings",
+                "Chains and Belts",
+                "Sheaves and Sprockets",
+                "Automatic Control Valves",
+                "Switches and Transducers",
+              ],
+            },
+            {
+              title: "Materials and Consumables",
+              items: [
+                "Flanges, Fittings, and Pipes",
+                "Gaskets and Seals",
+                "Fasteners and Stud Bolts",
+                "Lubricants and Industrial Chemicals",
+                "Measurement Instrumentation",
+              ],
+            },
+          ],
+        },
       ],
     },
     servicePage: {
       eyebrow: "Service",
       title: "An integrated process to source, verify, move, and deliver with control.",
       intro:
-        "AGF Group LLC provides integrated work in which every stage of the supply chain is considered to deliver the best alternative for the client, with operational follow-up, technical comparison, and logistics support through cycle closeout.",
+        "AGF Group provides integrated work in which every stage of the supply chain is considered to deliver the best alternative for the client, with operational follow-up, technical comparison, and logistics support through cycle closeout.",
       overview:
         "Our approach combines procurement, alternative evaluation, order follow-up, storage, traceability, and Door-to-Door service to reduce operational pressure on the client.",
       steps: [
@@ -890,9 +1038,9 @@ export const translations = {
         "Share your requirement with specifications, delivery timing, and operational scope. Our team can evaluate alternatives and respond with the right service path.",
       detailsTitle: "Contact information",
       details: [
-        { id: "address", label: "Address", value: "26623 Pampas Grass Ln, Katy, Texas 77493" },
-        { id: "phone", label: "Phone", value: "832-269-5511" },
-        { id: "email", label: "Email", value: "agarcia@arkonv.com" },
+        { id: "address", label: "Address", value: "Av. José A. Anzoátegui, No 17, Oasis,\nAnaco. Estado Anzoátegui, Venezuela." },
+        { id: "phone", label: "Phone", value: "+58 282-4247906\n+58 414-8390026" },
+        { id: "email", label: "Email", value: "sales@agfgrouph.com" },
         { id: "website", label: "Website", value: "agfgrouph.com" },
       ],
       requestTitle: "What to include in your request",
@@ -911,19 +1059,19 @@ export const translations = {
       navTitle: "Navigation",
       servicesTitle: "Services",
       contactTitle: "Contact",
-      address: "26623 Pampas Grass Ln\nKaty, Texas 77493",
-      phone: "832-269-5511",
-      email: "agarcia@arkonv.com",
+      address: "Av. José A. Anzoátegui, No 17, Oasis\nAnaco. Estado Anzoátegui, Venezuela",
+      phone: "+58 282-4247906",
+      email: "sales@agfgrouph.com",
       website: "agfgrouph.com",
       ctaBtn: "Send us a message",
       copyright: "All rights reserved.",
       serviceLinks: [
-        "Air Freight",
-        "Sea Freight",
-        "Ground Transport",
-        "Customs Agency",
-        "Warehousing",
-        "Integrated Logistics",
+        "Procurement & Sourcing",
+        "Alternative Evaluation",
+        "Logistics & Tracking",
+        "Warehousing & Verification",
+        "Door-to-Door Service",
+        "Cycle Closeout",
       ],
     },
   },

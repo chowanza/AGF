@@ -101,6 +101,9 @@ body {
 
 /* Language button — outside the pill, right side */
 .nav-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 0.85rem;
   font-weight: 700;
   color: white;
@@ -114,6 +117,12 @@ body {
   transition: opacity 0.2s;
   flex-shrink: 0;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.lang-flag {
+  border-radius: 2px;
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .nav-lang:hover {
@@ -1176,6 +1185,9 @@ body {
 }
 
 .mobile-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   margin-top: 1.5rem;
   padding: 0.85rem 1.5rem;
   background: var(--agf-yellow);

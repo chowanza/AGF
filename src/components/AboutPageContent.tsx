@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { Target, Eye, ShieldCheck, Building2, MapPin } from "lucide-react";
+import { Target, Eye, ShieldCheck, Building2, MapPin, Factory } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 
-const aboutIcons = [Building2, Target, Eye, ShieldCheck] as const;
+const aboutIcons = [Building2, Target, Eye, ShieldCheck, Factory] as const;
 
 export default function AboutPageContent() {
   const { t } = useLang();
@@ -14,6 +14,7 @@ export default function AboutPageContent() {
     { ...t.aboutPage.sections.goal, icon: aboutIcons[1] },
     { ...t.aboutPage.sections.mission, icon: aboutIcons[2] },
     { ...t.aboutPage.sections.vision, icon: aboutIcons[3] },
+    { ...t.aboutPage.sections.faja, icon: aboutIcons[4] },
   ];
 
   return (

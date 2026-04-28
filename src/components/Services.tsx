@@ -1,11 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ClipboardList, PackageCheck, Truck } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 
-const iconSrcs = ["/airplane_icon.svg", "/boat_icon.svg"];
-const iconAlts = ["Airplane icon - Air freight", "Boat icon - Sea freight"];
+const serviceIcons = [ClipboardList, PackageCheck, Truck];
 
 export default function Services() {
   const { t } = useLang();
@@ -29,17 +28,22 @@ export default function Services() {
               ))}
             </h3>
             <div className="service-items">
-              {t.services.items.map((item, i) => (
-                <div className="service-item" key={item.id} id={`service-${item.id}`}>
-                  <div className="service-item-icon">
-                    <Image src={iconSrcs[i]} alt={iconAlts[i]} width={36} height={36} style={{ objectFit: "contain" }} />
-                  </div>
-                  <div className="service-item-text">
-                    <h4>{item.title}</h4>
-                    <p>{item.description}</p>
-                  </div>
-                </div>
-              ))}
+              {t.services.items.map((item, i) => {
+                const Icon = serviceIcons[i] || PackageCheck;
+                return (
+                  <Link href={`/service`} key={item.id} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <div className="service-item" id={`service-${item.id}`}>
+                      <div className="service-item-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <Icon size={24} color="#000" />
+                      </div>
+                      <div className="service-item-text">
+                        <h4>{item.title}</h4>
+                        <p>{item.description}</p>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
             <Link href="/service" className="btn-primary" style={{ alignSelf: "flex-start" }} id="services-more-btn">
               {t.services.cta} <ArrowRight size={16} />

@@ -41,20 +41,36 @@ export default function ServicePageContent() {
       </section>
 
       <section className="section about-page-section">
-        <div className="container service-steps-grid">
+        <div className="container service-steps-grid" style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
           {t.servicePage.steps.map((step, index) => {
             const Icon = serviceIcons[index % serviceIcons.length];
+            const imageNames = [
+              "serv_requisition",
+              "serv_evaluation",
+              "serv_purchase_order",
+              "serv_supplier",
+              "serv_logistics",
+              "serv_tracking",
+              "serv_door_to_door",
+              "serv_closeout"
+            ];
+            const imgSrc = `/${imageNames[index] || "serv_logistics"}.png`;
 
             return (
-              <article key={step.title} className="service-step-card">
-                <div className="service-step-head">
-                  <div className="about-detail-icon">
-                    <Icon size={18} />
-                  </div>
-                  <span className="service-step-number">{String(index + 1).padStart(2, "0")}</span>
+              <article key={step.title} className="service-step-card" style={{ display: 'flex', flexDirection: 'column', background: '#fff', borderRadius: '1.5rem', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)' }}>
+                <div style={{ position: 'relative', height: '300px', width: '100%' }}>
+                  <Image src={imgSrc} alt={step.title} fill style={{ objectFit: 'cover' }} sizes="100vw" />
                 </div>
-                <h2>{step.title}</h2>
-                <p>{step.body}</p>
+                <div style={{ padding: '2.5rem' }}>
+                  <div className="service-step-head" style={{ marginBottom: '1.5rem' }}>
+                    <div className="about-detail-icon">
+                      <Icon size={18} />
+                    </div>
+                    <span className="service-step-number" style={{ fontSize: '2rem', fontWeight: 800, color: '#e0e0e0' }}>{String(index + 1).padStart(2, "0")}</span>
+                  </div>
+                  <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#013220' }}>{step.title}</h2>
+                  <p style={{ color: '#555', lineHeight: 1.6, fontSize: '1.05rem' }}>{step.body}</p>
+                </div>
               </article>
             );
           })}

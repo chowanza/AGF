@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} AGF Group LLC. {t.footer.copyright}</span>
+          <span>© {new Date().getFullYear()} AGF Group. {t.footer.copyright}</span>
         </div>
       </div>
     </footer>

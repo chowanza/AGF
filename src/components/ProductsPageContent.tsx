@@ -32,26 +32,35 @@ export default function ProductsPageContent() {
         <div className="container product-category-stack">
           {t.productsPage.categories.map((category, index) => {
             const Icon = categoryIcons[index] ?? Factory;
+            const imgSrc = `/prod_${category.id.replace('-', '_')}.png`;
 
             return (
-              <section key={category.id} className="product-category-card">
-                <div className="product-category-header">
-                  <div className="about-detail-icon">
-                    <Icon size={18} />
-                  </div>
-                  <h2>{category.title}</h2>
+              <section key={category.id} className="product-category-card" style={{ display: 'flex', flexDirection: 'column', marginBottom: '4rem', background: '#fff', borderRadius: '1.5rem', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }}>
+                <div style={{ position: 'relative', width: '100%', height: '350px' }}>
+                  <Image src={imgSrc} alt={category.title} fill style={{ objectFit: 'cover' }} sizes="100vw" />
                 </div>
-                <div className="product-groups-grid">
-                  {category.groups.map((group) => (
-                    <article key={group.title} className="product-group-card">
-                      <h3>{group.title}</h3>
-                      <ul className="policy-list">
-                        {group.items.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
-                    </article>
-                  ))}
+                <div style={{ padding: '2.5rem' }}>
+                  <div className="product-category-header" style={{ marginBottom: '2rem' }}>
+                    <div className="about-detail-icon">
+                      <Icon size={18} />
+                    </div>
+                    <h2 style={{ fontSize: '2rem', fontWeight: 700 }}>{category.title}</h2>
+                  </div>
+                  <div className="product-groups-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2.5rem' }}>
+                    {category.groups.map((group) => (
+                      <article key={group.title} className="product-group-card" style={{ padding: '1.5rem', boxShadow: 'none', background: '#f8f9f5', borderRadius: '1rem', border: '1px solid rgba(107, 124, 58, 0.1)' }}>
+                        <h3 style={{ fontSize: '1.1rem', color: '#013220', marginBottom: '1rem', fontWeight: 700 }}>{group.title}</h3>
+                        <ul className="policy-list" style={{ listStyle: 'none', padding: 0 }}>
+                          {group.items.map((item) => (
+                            <li key={item} style={{ position: 'relative', paddingLeft: '1.2rem', marginBottom: '0.6rem', fontSize: '0.95rem', color: '#555', lineHeight: 1.4 }}>
+                              <span style={{ position: 'absolute', left: 0, top: '8px', width: '6px', height: '6px', backgroundColor: '#8DC63F', borderRadius: '50%' }}></span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </article>
+                    ))}
+                  </div>
                 </div>
               </section>
             );

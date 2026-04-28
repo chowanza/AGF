@@ -33,29 +33,31 @@ export default function Sectors() {
             const Icon = sectorIcons[i] ?? Building2;
 
             return (
-              <article
-                key={item.id || i}
-                className="sector-card"
-                id={`sector-${item.id}`}
-              >
-                <Image
-                  src={sectorImages[i]}
-                  alt={item.name || "Sector"}
-                  fill
-                  className="sector-card-img"
-                  sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 25vw"
-                  priority={i < 2}
-                  quality={90}
-                />
-                <div className="sector-card-overlay" />
-                <div className="sector-card-content">
-                  <div className="sector-card-header">
-                    <Icon size={20} strokeWidth={2.25} />
-                    <h3 className="sector-name">{item.name}</h3>
+              <Link href="/products" key={item.id || i} style={{ textDecoration: 'none', display: 'block', height: '100%' }}>
+                <article
+                  className="sector-card"
+                  id={`sector-${item.id}`}
+                  style={{ height: '100%' }}
+                >
+                  <Image
+                    src={sectorImages[i]}
+                    alt={item.name || "Sector"}
+                    fill
+                    className="sector-card-img"
+                    sizes="(max-width: 480px) 100vw, (max-width: 900px) 50vw, 25vw"
+                    priority={i < 2}
+                    quality={90}
+                  />
+                  <div className="sector-card-overlay" />
+                  <div className="sector-card-content">
+                    <div className="sector-card-header">
+                      <Icon size={20} strokeWidth={2.25} />
+                      <h3 className="sector-name">{item.name}</h3>
+                    </div>
+                    <p className="sector-desc">{item.description}</p>
                   </div>
-                  <p className="sector-desc">{item.description}</p>
-                </div>
-              </article>
+                </article>
+              </Link>
             );
           })}
         </div>
