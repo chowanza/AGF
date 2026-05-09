@@ -2,11 +2,11 @@
 @import "tailwindcss";
 
 :root {
-  --agf-green: #6b7c3a;
-  --agf-green-dark: #4f5e28;
-  --agf-green-light: #7d9240;
-  --agf-yellow: #c8d44a;
-  --agf-yellow-hover: #b5c13a;
+  --agf-green: #3b5628;
+  --agf-green-dark: #3b5628;
+  --agf-green-light: #c0c049;
+  --agf-yellow: #c0c049;
+  --agf-yellow-hover: #3b5628;
   --agf-dark: #1a1a1a;
   --agf-gray: #f5f5f0;
 }
@@ -90,7 +90,7 @@ body {
 
 .nav-link:hover {
   color: var(--agf-green);
-  background: rgba(107, 124, 58, 0.08);
+  background: rgba(59, 86, 40, 0.08);
 }
 
 .nav-link--active {
@@ -150,7 +150,7 @@ body {
 .btn-primary:hover {
   background: var(--agf-yellow-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(200, 212, 74, 0.4);
+  box-shadow: 0 8px 24px rgba(192, 192, 73, 0.4);
 }
 
 .btn-primary:active {
@@ -220,8 +220,8 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(200, 212, 74, 0.2);
-  border: 1px solid rgba(200, 212, 74, 0.5);
+  background: rgba(192, 192, 73, 0.2);
+  border: 1px solid rgba(192, 192, 73, 0.5);
   color: var(--agf-yellow);
   font-size: 0.8rem;
   font-weight: 600;
@@ -306,7 +306,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(107, 124, 58, 0.1);
+  background: rgba(59, 86, 40, 0.1);
   color: var(--agf-green);
   font-size: 0.78rem;
   font-weight: 700;
@@ -363,7 +363,7 @@ body {
   cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   border: none !important;
-  box-shadow: 1px 5px 12.3px rgba(107, 124, 58, 0.6) !important;
+  box-shadow: 1px 5px 12.3px rgba(59, 86, 40, 0.6) !important;
   outline: none !important;
 }
 
@@ -386,9 +386,9 @@ body {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg,
-      rgba(200, 212, 74, 0.64) 3%,
+      rgba(192, 192, 73, 0.64) 3%,
       rgba(255, 255, 255, 0.28) 34%,
-      rgba(107, 124, 58, 0.9) 60%);
+      rgba(59, 86, 40, 0.9) 60%);
   z-index: 1;
 }
 
@@ -430,7 +430,7 @@ body {
 .sector-desc {
   font-size: clamp(0.95rem, 1.15vw, 1.375rem);
   font-weight: 400;
-  color: rgba(200, 212, 74, 0.8);
+  color: rgba(192, 192, 73, 0.8);
   line-height: 1.27;
   margin: 0;
   max-width: 100%;
@@ -484,7 +484,7 @@ body {
 .service-item-icon {
   width: 48px;
   height: 48px;
-  background: rgba(200, 212, 74, 0.2);
+  background: rgba(192, 192, 73, 0.2);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -577,21 +577,21 @@ body {
   padding: 1.25rem;
   background: white;
   border-radius: 14px;
-  border: 1px solid rgba(107, 124, 58, 0.12);
+  border: 1px solid rgba(59, 86, 40, 0.12);
   transition: all 0.3s ease;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 .why-feature:hover {
   border-color: var(--agf-green);
-  box-shadow: 0 8px 30px rgba(107, 124, 58, 0.15);
+  box-shadow: 0 8px 30px rgba(59, 86, 40, 0.15);
   transform: translateY(-3px);
 }
 
 .why-feature-icon {
   width: 40px;
   height: 40px;
-  background: rgba(107, 124, 58, 0.1);
+  background: rgba(59, 86, 40, 0.1);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -816,7 +816,7 @@ body {
   padding: 1.75rem;
   border-radius: 18px;
   background: white;
-  border: 1px solid rgba(107, 124, 58, 0.12);
+  border: 1px solid rgba(59, 86, 40, 0.12);
   box-shadow: 0 18px 50px rgba(24, 31, 15, 0.06);
 }
 
@@ -828,7 +828,7 @@ body {
   justify-content: center;
   border-radius: 12px;
   margin-bottom: 1rem;
-  background: rgba(107, 124, 58, 0.1);
+  background: rgba(59, 86, 40, 0.1);
   color: var(--agf-green);
 }
 
@@ -853,7 +853,7 @@ body {
   padding: 2.5rem;
   border-radius: 24px;
   background: linear-gradient(135deg, #f5f5ef 0%, #eef0e5 100%);
-  border: 1px solid rgba(107, 124, 58, 0.12);
+  border: 1px solid rgba(59, 86, 40, 0.12);
 }
 
 .about-quality-header {
@@ -875,7 +875,7 @@ body {
   text-align: center;
   border-radius: 14px;
   background: white;
-  border: 1px solid rgba(107, 124, 58, 0.12);
+  border: 1px solid rgba(59, 86, 40, 0.12);
   color: var(--agf-green-dark);
   font-weight: 700;
   line-height: 1.4;
@@ -897,36 +897,168 @@ body {
   text-align: center;
   border-radius: 24px;
   background: white;
-  border: 1px solid rgba(107, 124, 58, 0.12);
+  border: 1px solid rgba(59, 86, 40, 0.12);
   box-shadow: 0 18px 50px rgba(24, 31, 15, 0.06);
 }
 
-.policy-grid {
+.policies-overview-section {
+  background: linear-gradient(180deg, rgba(59, 86, 40, 0.08) 0%, #fafaf5 100%);
+}
+
+.policies-overview {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
-.policy-card {
-  padding: 1.75rem;
-  border-radius: 18px;
-  background: white;
-  border: 1px solid rgba(107, 124, 58, 0.12);
-  box-shadow: 0 18px 50px rgba(24, 31, 15, 0.06);
+.policies-overview-copy {
+  display: grid;
+  gap: 1rem;
+  max-width: 52rem;
 }
 
-.policy-card h2 {
-  font-size: 1.45rem;
+.policies-overview-desc {
+  margin: 0;
+  max-width: 48rem;
+}
+
+.policies-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.policy-overview-card {
+  min-height: 100%;
+  padding: 1.4rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(59, 86, 40, 0.14);
+  box-shadow: 0 18px 40px rgba(24, 31, 15, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.policy-overview-icon,
+.policy-panel-icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba(59, 86, 40, 0.1);
+  color: var(--agf-green);
+}
+
+.policy-overview-card h3 {
+  margin: 1rem 0 0.7rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  margin-bottom: 0.8rem;
-  color: #1a1a1a;
+  color: #17210d;
   font-family: 'Outfit', sans-serif;
 }
 
-.policy-card p {
-  color: #555;
-  line-height: 1.75;
+.policy-overview-card p {
+  color: #55604a;
+  line-height: 1.7;
+  font-size: 0.94rem;
+}
+
+.policies-detail-section {
+  background:
+    radial-gradient(circle at top right, rgba(192, 192, 73, 0.16), transparent 24%),
+    linear-gradient(180deg, #fafaf5 0%, #f2f3eb 100%);
+}
+
+.policies-detail-stack {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.policy-panel {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(246, 247, 239, 0.96) 100%);
+  border: 1px solid rgba(59, 86, 40, 0.14);
+  box-shadow: 0 24px 60px rgba(24, 31, 15, 0.08);
+}
+
+.policy-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0.6rem;
+  background: linear-gradient(180deg, var(--agf-green) 0%, var(--agf-yellow) 100%);
+}
+
+.policy-panel-alt::before {
+  inset: 0 0 0 auto;
+}
+
+.policy-panel-head {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.policy-panel-kicker {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(79, 94, 40, 0.72);
+}
+
+.policy-panel-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+  gap: 1.75rem;
+}
+
+.policy-panel-summary h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.05;
+  font-weight: 800;
   margin-bottom: 1rem;
+  color: #17210d;
+  font-family: 'Outfit', sans-serif;
+}
+
+.policy-panel-summary p {
+  color: #4c5641;
+  line-height: 1.9;
+  font-size: 1.02rem;
+}
+
+.policy-panel-summary p + p {
+  margin-top: 1rem;
+}
+
+.policy-panel-points {
+  padding: 1.35rem 1.4rem;
+  border-radius: 22px;
+  background: rgba(59, 86, 40, 0.07);
+  border: 1px solid rgba(59, 86, 40, 0.1);
+}
+
+.policy-panel-points h3 {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--agf-green-dark);
+}
+
+.policy-panel-subheading {
+  margin-top: 1.25rem;
 }
 
 .policy-list {
@@ -962,7 +1094,7 @@ body {
   padding: 2rem;
   border-radius: 20px;
   background: white;
-  border: 1px solid rgba(107, 124, 58, 0.12);
+  border: 1px solid rgba(59, 86, 40, 0.12);
   box-shadow: 0 18px 50px rgba(24, 31, 15, 0.06);
 }
 
@@ -990,7 +1122,7 @@ body {
   padding: 1.25rem;
   border-radius: 16px;
   background: #f7f7f1;
-  border: 1px solid rgba(107, 124, 58, 0.1);
+  border: 1px solid rgba(59, 86, 40, 0.1);
 }
 
 .product-group-card h3 {
@@ -1011,7 +1143,7 @@ body {
   padding: 1.75rem;
   border-radius: 18px;
   background: white;
-  border: 1px solid rgba(107, 124, 58, 0.12);
+  border: 1px solid rgba(59, 86, 40, 0.12);
   box-shadow: 0 18px 50px rgba(24, 31, 15, 0.06);
 }
 
@@ -1054,7 +1186,7 @@ body {
   padding: 1.75rem;
   border-radius: 18px;
   background: white;
-  border: 1px solid rgba(107, 124, 58, 0.12);
+  border: 1px solid rgba(59, 86, 40, 0.12);
   box-shadow: 0 18px 50px rgba(24, 31, 15, 0.06);
 }
 
@@ -1077,7 +1209,7 @@ body {
   padding: 1.25rem;
   border-radius: 16px;
   background: #f7f7f1;
-  border: 1px solid rgba(107, 124, 58, 0.1);
+  border: 1px solid rgba(59, 86, 40, 0.1);
 }
 
 .contact-card h3 {
@@ -1106,12 +1238,12 @@ body {
 
 .contact-btn-outline {
   color: var(--agf-green-dark);
-  border-color: rgba(107, 124, 58, 0.28);
+  border-color: rgba(59, 86, 40, 0.28);
   background: #fafaf5;
 }
 
 .contact-btn-outline:hover {
-  background: rgba(107, 124, 58, 0.08);
+  background: rgba(59, 86, 40, 0.08);
   border-color: var(--agf-green);
   color: var(--agf-green-dark);
 }
@@ -1296,7 +1428,11 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .policy-grid {
+  .policies-overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .policy-panel-content {
     grid-template-columns: 1fr;
   }
 
@@ -1456,8 +1592,32 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .policy-grid {
+  .policies-overview-grid {
     grid-template-columns: 1fr;
+  }
+
+  .policy-panel {
+    padding: 1.5rem;
+    border-radius: 22px;
+  }
+
+  .policy-panel-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .policy-panel-content {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .policy-panel-summary h2 {
+    font-size: 1.65rem;
+  }
+
+  .policy-panel-summary p {
+    font-size: 0.98rem;
+    line-height: 1.75;
   }
 
   .product-category-card {
@@ -1575,3 +1735,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+

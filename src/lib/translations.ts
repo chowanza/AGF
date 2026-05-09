@@ -160,65 +160,75 @@ export const translations = {
       ],
     },
     policiesPage: {
-      eyebrow: "Politicas",
-      title: "Lineamientos operativos y de cumplimiento para una gestion segura y responsable.",
-      intro:
-        "Las politicas de AGF Group organizan nuestro trabajo en responsabilidad social, prevencion, seguridad, ambiente y calidad para sostener operaciones consistentes y relaciones confiables con clientes, personal y comunidades.",
+      eyebrow: "",
+      title: "POLITICAS",
+      intro: "",
       items: [
         {
-          id: "ethics-policy",
-          title: "Política de Ética e Integridad",
-          body:
-            "La ética, integridad y el cumplimiento son fundamentales en nuestros valores. Nuestro personal está calificado para mantener altos estándares de transparencia y confianza en cada proceso que gestionamos.",
-          bullets: [
-            "Combatir la corrupción (soborno, fraude, extorsión y falsificación) y el acoso laboral.",
-            "Mantener principios éticos firmes frente a la responsabilidad ambiental.",
-            "Asegurar un trato equitativo sin discriminación por raza, color, religión, sexo o discapacidad física.",
-          ],
-        },
-        {
           id: "social-responsibility",
-          title: "Politicas de responsabilidad social",
-          body:
-            "AGF Group establece la busqueda constante de buenas relaciones con las comunidades cercanas a sus infraestructuras, basadas en respeto mutuo, cortesia, transparencia, concertacion, participacion y criterios claros de actuacion.",
+          title: "Responsabilidad social",
+          body: [
+            "El Grupo AGF C.A. busca constantemente una buena relaci?n con las comunidades aleda?as a nuestras infraestructuras. Esto nos permite mantener una comunicaci?n fluida basada en el respeto mutuo, la cortes?a, la transparencia, el acuerdo y la participaci?n, todo ello bajo criterios de transparencia.",
+          ],
+          listHeading: "AGF se compone de la siguiente premisa:",
           bullets: [
-            "Coordinar con la empresa contratante, comunidades y autoridades locales los planes de accion requeridos para minimizar incomodidades en las zonas de influencia.",
-            "Participar de manera eficaz en el mejoramiento de la calidad de vida de los empleados y sus familias.",
-            "No permitir labores forzadas u obligatorias y asegurar la defensa de los derechos humanos sin discriminacion racial, de sexo, religion u otras condiciones.",
+            "Coordinar con la empresa contratista, las comunidades y las autoridades locales los planes de acci?n necesarios para minimizar las molestias que la operaci?n pueda ocasionar en las zonas involucradas.",
+            "Participar y contribuir eficazmente a mejorar la calidad de vida de nuestros empleados y sus familias.",
+            "El Grupo AGF C.A. velar? por la defensa de los Derechos Humanos. Por lo tanto, no existe discriminaci?n racial, sexual, religiosa ni de ning?n otro tipo.",
           ],
         },
         {
-          id: "alcohol-tobacco-drugs",
-          title: "Politica preventiva de alcohol, tabaco y drogas",
-          body:
-            "El consumo, posesion o venta de alcohol y drogas ilicitas dentro de instalaciones propias o del cliente se considera una falta grave y activa el proceso disciplinario correspondiente. El mismo criterio aplica cuando estas sustancias contribuyen a un incidente.",
-          bullets: [
-            "Aplicar controles aleatorios de alcoholimetria e inspecciones en instalaciones y vehiculos propios o contratados.",
-            "Desarrollar campanas informativas durante todo el ano para prevenir el consumo de alcohol, tabaco y drogas.",
-            "Capacitar al personal sobre los efectos negativos de estas sustancias a nivel individual, social, laboral y familiar.",
+          id: "ethics-policy",
+          title: "?tica",
+          body: [
+            "La ?tica, la integridad y el cumplimiento normativo son parte fundamental de nuestros valores. En el grupo AGF C.A. contamos con profesionales y personal altamente cualificadoos para trabajar con altos est?ndares en todo momento. Nuestra pol?tica de ?tica, integridad y cumplimiento normativo crea una cultura basada en buenos est?ndares, valores, confianza y transparencia en cada proceso que gestionamos. Nuestra ?tica est? ligada a nuestra cultura empresarial.",
           ],
-        },
-        {
-          id: "hse-policy",
-          title: "Política de Salud, Seguridad y Ambiente (HSE)",
-          body:
-            "Nuestra política HSE establece lineamientos para el manejo adecuado de desechos e impactos, protegiendo a nuestro personal y al medio ambiente en todas las actividades. Nuestro sistema ambiental opera como parte integral de la gestión de calidad.",
+          listHeading: "Nuestra empresa ha desarrollado un c?digo ?tico y corporativo basado en combatir:",
           bullets: [
-            "Asegurar el manejo apropiado de efluentes y materiales para garantizar la seguridad operativa.",
-            "Minimizar los efectos negativos y promover la sensibilización ambiental en todo nuestro personal.",
-            "Prevenir actos y condiciones inseguras, optimizando los impactos y evitando la degradación del entorno.",
+            "Corrupci?n (soborno, fraude, explotaci?n, extorsi?n, tergiversaci?n, etc.)",
+            "Acoso laboral",
+          ],
+          secondaryListHeading: "Algunos de nuestros principios ?ticos se han adaptado a muchas responsabilidades como:",
+          secondaryBullets: [
+            "Responsabilidad ambiental.",
+            "Discriminaci?n por raza, color, religi?n, sexo, edad y discapacidad f?sica",
           ],
         },
         {
           id: "quality-policy",
-          title: "Politica de calidad",
-          body:
-            "La politica de calidad de AGF Group se apoya en el cumplimiento de normas y procedimientos, en la mejora continua y en la satisfaccion del cliente como eje de nuestra gestion operativa.",
-          bullets: [
-            "Garantizar consistencia en los procesos y en la entrega del servicio.",
-            "Alinear la operacion con estandares tecnicos, de seguridad y ambientales.",
-            "Sostener una cultura de mejora continua enfocada en confianza y cumplimiento.",
+          title: "Calidad",
+          body: [
+            "Nuestro sistema de gesti?n de calidad nos permite garantizar altos est?ndares de calidad y procedimientos establecidos para la satisfacci?n del cliente. Adem?s, la empresa se compromete a minimizar el impacto ambiental, la seguridad y la salud laboral de sus empleados.",
           ],
+          listHeading: "El Grupo AGF C.A. considera como parte de los est?ndares de calidad los siguientes hechos:",
+          bullets: [
+            "Asegurar la calidad de todos los equipos, materiales, estructuras, componentes y sistemas utilizados en la construcci?n, fabricaci?n y operaci?n de todo tipo de instalaciones industriales.",
+            "Cumplir con todos los est?ndares y regulaciones de calidad pertinentes.",
+            "Verificar materiales, piezas y productos finales mediante controles independientes, auditor?as, inspecciones y testificaciones.",
+            "Obtener beneficios del control y garant?a de calidad (QA/QC) tanto fuera del sitio en las instalaciones de los fabricantes como en el sitio durante el proceso de construcci?n.",
+          ],
+        },
+        {
+          id: "alcohol-tobacco-drugs",
+          title: "Alcohol, tabaco y drogas",
+          body: [
+            "AGF GROUP C.A., se compromete a mantener un ambiente de trabajo libre de alcohol, tabaco y drogas. Se toman en cuenta las siguientes medidas:",
+          ],
+          bullets: [
+            "Se realizan campa?as durante el a?o para prevenir el consumo de alcohol, tabaco y drogas. En estas campa?as, se informa a los empleados sobre los efectos negativos que puede conllevar el consumo de estas sustancias a nivel individual, social, laboral y familiar.",
+            "Los empleados se someter?n a un proceso disciplinario si se verifica el consumo, posesi?n o uso de alcohol o drogas il?citas dentro de las instalaciones. Esto se considerar? una falta grave. Este procedimiento se aplicar? en caso de accidente en el que el consumo de alcohol o drogas haya sido un factor contribuyente.",
+            "Se realizan pruebas aleatorias peri?dicamente, sin previo aviso a todos los empleados, para verificar el nivel de alcohol o drogas.",
+            "Peri?dicamente, se realizan inspecciones en todas las ?reas de la empresa, sus veh?culos y contratados.",
+          ],
+        },
+        {
+          id: "hse-policy",
+          title: "Salud, Seguridad y Medio Ambiente",
+          body: [
+            "El Grupo AGF C.A. dise?? una pol?tica de Salud, Seguridad y Medio Ambiente para establecer directrices y responsabilidades en la gesti?n de residuos, tanto peligrosos como no peligrosos. Asimismo, se gestionan los efluentes y materiales generados por las actividades de los empleados. Estos procedimientos se implementar?n de forma que la gesti?n adecuada garantice la seguridad de nuestro personal y del medio ambiente.",
+            "El Grupo AGF C.A. est? comprometido con la protecci?n del medio ambiente como parte integral de su sistema de gesti?n de calidad. Esto significa que la empresa operar? con el objetivo de minimizar cualquier impacto negativo en el medio ambiente. Nuestro personal se preocupa constantemente por la conservaci?n del medio ambiente. En conclusi?n, AGF se compromete a minimizar cualquier riesgo ambiental, a la vez que mejoramos nuestro desempe?o. Adem?s, optimizamos el impacto ambiental y su no degradaci?n.",
+          ],
+          bullets: [],
         },
       ],
     },
@@ -698,65 +708,77 @@ export const translations = {
       ],
     },
     policiesPage: {
-      eyebrow: "Policies",
-      title: "Operating and compliance guidelines for safe and responsible management.",
-      intro:
-        "AGF Group policies organize our work across social responsibility, prevention, safety, environment, and quality to sustain consistent operations and reliable relationships with clients, personnel, and communities.",
+      eyebrow: "",
+      title: "POLICIES",
+      intro: "",
       items: [
         {
-          id: "ethics-policy",
-          title: "Ethics and Integrity Policy",
-          body:
-            "Ethics, integrity, and compliance are fundamental to our values. Our personnel are highly qualified to maintain top standards of transparency and trust in every process we manage.",
-          bullets: [
-            "Combat corruption (bribery, fraud, exploitation, extortion, misrepresentation) and workplace harassment.",
-            "Maintain strong ethical principles regarding environmental responsibility.",
-            "Ensure fair treatment without discrimination by race, color, religion, sex, age, or physical impairment.",
-          ],
-        },
-        {
           id: "social-responsibility",
-          title: "Social responsibility policy",
-          body:
-            "AGF Group maintains a constant focus on good relationships with communities near its infrastructure, based on mutual respect, courtesy, transparency, participation, and clear criteria for action.",
+          title: "Social Responsibility",
+          body: [
+            "AGF Group, C.A. The Leader in Solutions, establishes the constant search for good relationship between the communities bordering our infrastructures. This allows us to be fluent framed about mutual respect, courtesy, transparency, agreement, and participation criteria of transparency.",
+          ],
+          listHeading: "AGF is comprised with the following premise:",
           bullets: [
-            "Coordinate required action plans with the contracting company, communities, and local authorities to minimize inconvenience in areas of influence.",
-            "Contribute effectively to improving the quality of life of employees and their families.",
-            "Disallow forced labor and protect human rights without racial, gender, religious, or other discrimination.",
+            "To coordinate with the contracting company, communities, and local authorities the action plans required to minimize any discomfort caused by the operation in the areas involved.",
+            "To participate and to contribute effectively on improving the quality of life of our employees and their families.",
+            "AGF GROUP will ensure the defense of Human Rights. Therefore, there is no racial discrimination, sex, religion and others.",
           ],
         },
         {
-          id: "alcohol-tobacco-drugs",
-          title: "Alcohol, tobacco, and drugs prevention policy",
-          body:
-            "The consumption, possession, or sale of alcohol and illicit drugs inside company or client facilities is considered a serious violation and triggers the applicable disciplinary process. The same standard applies when these substances contribute to an incident.",
-          bullets: [
-            "Use random alcohol testing and inspections in company and contracted facilities and vehicles.",
-            "Run preventive information campaigns throughout the year.",
-            "Train personnel on the negative individual, social, labor, and family effects of substance use.",
+          id: "ethics-policy",
+          title: "Ethics",
+          body: [
+            "The ethics, integrity and compliance, are fundamental part of our values. At AGF Group, C.A. The Leader in Solutions we have professionals and staff highly qualified to work with high standard in every moment. Our policy of ethics, integrity, and compliance create a culture based on good standards, values, trust and transparency of each process that we manage.",
+            "Our ethic is linkd to our business culture.",
           ],
-        },
-        {
-          id: "hse-policy",
-          title: "Health, Safety, and Environment (HSE) Policy",
-          body:
-            "Our HSE policy establishes guidelines for appropriate waste and impact management, protecting our personnel and the environment in all activities. Our environmental system is an integral part of our quality management.",
+          listHeading: "Our company has developed a code of ethics and corporation based on combating:",
           bullets: [
-            "Ensure appropriate handling of effluents and materials to guarantee operational safety.",
-            "Minimize negative effects and continually promote environmental awareness among all personnel.",
-            "Prevent unsafe acts and conditions, optimizing impacts and avoiding degradation of the surroundings.",
+            "Corruption (bribery, fraud, exploitation, extortion, misrepresentation, etc.)",
+            "Workplace harassment",
+          ],
+          secondaryListHeading: "Some of our ethical principles have adapted to many responsibilities such as:",
+          secondaryBullets: [
+            "Environmental responsibility.",
+            "Discrimination by race, color, religion, sex, age and physical impairment",
           ],
         },
         {
           id: "quality-policy",
-          title: "Quality policy",
-          body:
-            "AGF Group's quality policy is grounded in compliance with standards and procedures, continuous improvement, and customer satisfaction as a core operational principle.",
-          bullets: [
-            "Guarantee consistency in processes and service delivery.",
-            "Align operations with technical, safety, and environmental standards.",
-            "Sustain a culture of continuous improvement focused on trust and performance.",
+          title: "Quality",
+          body: [
+            "Our quality management system allows us to ensure high quality standards and procedures established to meet the satisfaction of the customer. Additionally, the company is committed to ensure a minimum environmental impact, safety and occupational health to the employees.",
           ],
+          listHeading: "AGF Group C.A. considers as part of the quality standards the following facts:",
+          bullets: [
+            "To assure the quality of all equipment, materials, structures, components and systems utilized in the construction, manufacturing and operation of all types of industrial facilities.",
+            "To comply with all relevant quality standards and regulations.",
+            "To verify materials, parts and final products through independent checks, audits, inspections and witnessing.",
+            "To get benefit from quality assurance and quality control (QA/QC) both off-site at manufacturers? facilities and on-site during the construction process.",
+          ],
+        },
+        {
+          id: "alcohol-tobacco-drugs",
+          title: "Alcohol, Tobacco and Drugs",
+          body: [
+            "AGF GROUP C.A., is committed to keep a work environment free of alcohol, tobacco, and drugs. The following measures are taken into account:",
+          ],
+          bullets: [
+            "Campaigns are made during the year with the purpose of preventing the consumption of alcohol, tobacco, and drugs. In these campaigns, employees are notified about the negative effects that can lead to the consumption of these substances at an individual, social, work and family level.",
+            "Employees will submit under a disciplinary process in case of a verification of consumption, possession or use of alcohol and / or illicit drugs inside the facilities. This will be considered serious misconduct. This procedure would be applied in the occurrence of an accident, in which the use of alcohol and / or drugs has been a contributing factor.",
+            "Random tests are periodically made without prior communication to all employees. This is made to check any alcohol or drugs level.",
+            "Inspections are periodically made in all areas of the company, its vehicles, and contracted.",
+          ],
+        },
+        {
+          id: "hse-policy",
+          title: "Health Safety Environment (HSE)",
+          body: [
+            "AGF GROUP C.A., designed a HSE policy to establish guidelines and responsibilities for the waste management of hazardous or non-hazardous material. Also, the management of efffluents and materials wasted from the employees activities. These procedures will be made in a way that the appropriate management guarantees the safety of our personnel and environment.",
+            "AGF GROUP C.A., is committed to the environmental protection as an integral part of the quality management system. This means that the company will be operating in order to minimize any negative effects to the environment. Our staff is constantly being sensitive to the conservation of the environment.",
+            "In conclusion, AGF is committed to minimize any environmental risk, while we improve our performance. Also, to optimize the environmental impacts and non-degradation of this.",
+          ],
+          bullets: [],
         },
       ],
     },
@@ -1079,3 +1101,7 @@ export const translations = {
 
 export type Lang = "es" | "en";
 export type Translations = typeof translations.es;
+
+
+
+

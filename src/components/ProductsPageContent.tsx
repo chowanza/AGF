@@ -48,12 +48,12 @@ export default function ProductsPageContent() {
                   </div>
                   <div className="product-groups-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2.5rem' }}>
                     {category.groups.map((group) => (
-                      <article key={group.title} className="product-group-card" style={{ padding: '1.5rem', boxShadow: 'none', background: '#f8f9f5', borderRadius: '1rem', border: '1px solid rgba(107, 124, 58, 0.1)' }}>
-                        <h3 style={{ fontSize: '1.1rem', color: '#013220', marginBottom: '1rem', fontWeight: 700 }}>{group.title}</h3>
+                      <article key={group.title} className="product-group-card" style={{ padding: '1.5rem', boxShadow: 'none', background: '#f8f9f5', borderRadius: '1rem', border: '1px solid rgba(59, 86, 40, 0.1)' }}>
+                        <h3 style={{ fontSize: '1.1rem', color: '#3B5628', marginBottom: '1rem', fontWeight: 700 }}>{group.title}</h3>
                         <ul className="policy-list" style={{ listStyle: 'none', padding: 0 }}>
                           {group.items.map((item) => (
                             <li key={item} style={{ position: 'relative', paddingLeft: '1.2rem', marginBottom: '0.6rem', fontSize: '0.95rem', color: '#555', lineHeight: 1.4 }}>
-                              <span style={{ position: 'absolute', left: 0, top: '8px', width: '6px', height: '6px', backgroundColor: '#8DC63F', borderRadius: '50%' }}></span>
+                              <span style={{ position: 'absolute', left: 0, top: '8px', width: '6px', height: '6px', backgroundColor: '#C0C049', borderRadius: '50%' }}></span>
                               {item}
                             </li>
                           ))}

@@ -26,7 +26,7 @@ export default function Footer() {
         style={{ objectFit: "cover", objectPosition: "center", opacity: 0.18 }}
         sizes="100vw"
       />
-      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg, #6b7c3a, #c8d44a, #6b7c3a)", zIndex: 1 }} />
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "3px", background: "linear-gradient(90deg, #3B5628, #C0C049, #3B5628)", zIndex: 1 }} />
 
       <div style={{ position: "relative", zIndex: 2 }}>
         <div className="footer-grid">

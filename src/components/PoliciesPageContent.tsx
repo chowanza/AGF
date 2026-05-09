@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { Shield, Leaf, Users, CheckCircle2, Ban } from "lucide-react";
+import { Shield, Leaf, Users, Ban, Scale, ClipboardCheck } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 
-const policyIcons = [Users, Ban, Shield, Leaf, CheckCircle2];
+const policyIcons = [Users, Scale, ClipboardCheck, Ban, Leaf];
 
 export default function PoliciesPageContent() {
   const { t } = useLang();
@@ -22,29 +22,74 @@ export default function PoliciesPageContent() {
         />
         <div className="inner-page-hero-overlay" />
         <div className="inner-page-hero-content">
-          <span className="section-tag">{t.policiesPage.eyebrow}</span>
+          {t.policiesPage.eyebrow ? (
+            <span className="section-tag">{t.policiesPage.eyebrow}</span>
+          ) : null}
           <h1 className="inner-page-title">{t.policiesPage.title}</h1>
-          <p className="inner-page-intro">{t.policiesPage.intro}</p>
+          {t.policiesPage.intro ? (
+            <p className="inner-page-intro">{t.policiesPage.intro}</p>
+          ) : null}
         </div>
       </section>
 
-      <section className="section about-page-section">
-        <div className="container policy-grid">
+      <section className="section policies-detail-section">
+        <div className="container policies-detail-stack">
           {t.policiesPage.items.map((item, index) => {
             const Icon = policyIcons[index] ?? Shield;
+            const isAlternate = index % 2 === 1;
+            const listHeading = "listHeading" in item ? item.listHeading : undefined;
+            const secondaryListHeading =
+              "secondaryListHeading" in item ? item.secondaryListHeading : undefined;
+            const secondaryBullets =
+              "secondaryBullets" in item ? item.secondaryBullets : undefined;
 
             return (
-              <article key={item.id} className="policy-card">
-                <div className="about-detail-icon">
-                  <Icon size={18} />
+              <article
+                key={item.id}
+                className={`policy-panel ${isAlternate ? "policy-panel-alt" : ""}`}
+              >
+                <div className="policy-panel-head">
+                  <div className="policy-panel-icon">
+                    <Icon size={22} />
+                  </div>
                 </div>
-                <h2>{item.title}</h2>
-                <p>{item.body}</p>
-                <ul className="policy-list">
-                  {item.bullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
-                </ul>
+
+                <div className="policy-panel-content">
+                  <div className="policy-panel-summary">
+                    <h2>{item.title}</h2>
+                    {Array.isArray(item.body) ? (
+                      item.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)
+                    ) : (
+                      <p>{item.body}</p>
+                    )}
+                  </div>
+
+                  {listHeading || item.bullets.length > 0 || secondaryListHeading ? (
+                    <div className="policy-panel-points">
+                      {listHeading ? <h3>{listHeading}</h3> : null}
+
+                      {item.bullets.length > 0 ? (
+                        <ul className="policy-list">
+                          {item.bullets.map((bullet) => (
+                            <li key={bullet}>{bullet}</li>
+                          ))}
+                        </ul>
+                      ) : null}
+
+                      {secondaryListHeading ? (
+                        <h3 className="policy-panel-subheading">{secondaryListHeading}</h3>
+                      ) : null}
+
+                      {secondaryBullets?.length ? (
+                        <ul className="policy-list">
+                          {secondaryBullets.map((bullet: string) => (
+                            <li key={bullet}>{bullet}</li>
+                          ))}
+                        </ul>
+                      ) : null}
+                    </div>
+                  ) : null}
+                </div>
               </article>
             );
           })}

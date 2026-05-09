@@ -68,7 +68,7 @@ export default function ServicePageContent() {
                     </div>
                     <span className="service-step-number" style={{ fontSize: '2rem', fontWeight: 800, color: '#e0e0e0' }}>{String(index + 1).padStart(2, "0")}</span>
                   </div>
-                  <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#013220' }}>{step.title}</h2>
+                  <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#3B5628' }}>{step.title}</h2>
                   <p style={{ color: '#555', lineHeight: 1.6, fontSize: '1.05rem' }}>{step.body}</p>
                 </div>
               </article>
