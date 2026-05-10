@@ -5,16 +5,16 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 
 const galleryImages = [
-  "/new_infrastructure.png",
-  "/new_lot_of_trucks.png",
-  "/new_more_petroleum.png",
-  "/new_more_petroleum2.png",
-  "/new_petroleum.png",
-  "/new_some_trucks.png",
-  "/new_tower.png",
-  "/new_tower_and_trucks.png",
-  "/new_tower_cool_picture.png",
-  "/new_truck.png",
+  "/new_infrastructure.webp",
+  "/new_lot_of_trucks.webp",
+  "/new_more_petroleum.webp",
+  "/new_more_petroleum2.webp",
+  "/new_petroleum.webp",
+  "/new_some_trucks.webp",
+  "/new_tower.webp",
+  "/new_tower_and_trucks.webp",
+  "/new_tower_cool_picture.webp",
+  "/new_truck.webp",
 ] as const;
 
 const AUTO_ADVANCE_MS = 4500;

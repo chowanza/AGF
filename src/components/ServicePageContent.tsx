@@ -18,7 +18,7 @@ export default function ServicePageContent() {
     <main className="inner-page-main">
       <section className="inner-page-hero">
         <Image
-          src="/nuestros_servicios_logisticos.png"
+          src="/nuestros_servicios_logisticos.webp"
           alt="AGF Group services"
           fill
           className="inner-page-hero-bg"
@@ -54,7 +54,7 @@ export default function ServicePageContent() {
               "serv_door_to_door",
               "serv_closeout"
             ];
-            const imgSrc = `/${imageNames[index] || "serv_logistics"}.png`;
+            const imgSrc = `/${imageNames[index] || "serv_logistics"}.webp`;
 
             return (
               <article key={step.title} className="service-step-card" style={{ display: 'flex', flexDirection: 'column', background: '#fff', borderRadius: '1.5rem', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.08)' }}>

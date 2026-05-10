@@ -22,7 +22,7 @@ export default function AboutPageContent() {
     <main className="inner-page-main">
       <section className="inner-page-hero about-hero">
         <Image
-          src="/home_bg.png"
+          src="/home_bg.webp"
           alt="AGF Group operations"
           fill
           className="inner-page-hero-bg"

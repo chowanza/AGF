@@ -13,7 +13,7 @@ export default function PoliciesPageContent() {
     <main className="inner-page-main">
       <section className="inner-page-hero policy-hero">
         <Image
-          src="/home_bg.png"
+          src="/home_bg.webp"
           alt="AGF Group policies"
           fill
           className="inner-page-hero-bg"

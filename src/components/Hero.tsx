@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <Image
-        src="/home_bg.png"
+        src="/home_bg.webp"
         alt="Puerto marítimo con grúas y contenedores - AGF Group"
         fill
         priority

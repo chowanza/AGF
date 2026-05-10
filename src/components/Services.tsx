@@ -72,7 +72,7 @@ export default function Services() {
           </div>
           <div className="services-right" id="services-images" style={{ position: "relative" }}>
             <Image
-              src="/global_logistics.png"
+              src="/global_logistics.webp"
               alt="Nuestros Servicios Logísticos"
               fill
               style={{ objectFit: "cover" }}

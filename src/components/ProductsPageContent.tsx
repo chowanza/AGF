@@ -13,7 +13,7 @@ export default function ProductsPageContent() {
     <main className="inner-page-main">
       <section className="inner-page-hero">
         <Image
-          src="/global_logistics.png"
+          src="/global_logistics.webp"
           alt="AGF Group products"
           fill
           className="inner-page-hero-bg"
@@ -32,7 +32,7 @@ export default function ProductsPageContent() {
         <div className="container product-category-stack">
           {t.productsPage.categories.map((category, index) => {
             const Icon = categoryIcons[index] ?? Factory;
-            const imgSrc = `/prod_${category.id.replace('-', '_')}.png`;
+            const imgSrc = `/prod_${category.id.replace('-', '_')}.webp`;
 
             return (
               <section key={category.id} className="product-category-card" style={{ display: 'flex', flexDirection: 'column', marginBottom: '4rem', background: '#fff', borderRadius: '1.5rem', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }}>

@@ -7,7 +7,7 @@ export const translations = {
       products: "Productos",
       service: "Servicios",
       contact: "Contacto",
-      langToggleIcon: "/usa_icon.png",
+      langToggleIcon: "/usa_icon.webp",
       langToggleLabel: "EN",
     },
     hero: {
@@ -556,7 +556,7 @@ export const translations = {
       products: "Products",
       service: "Service",
       contact: "Contact us",
-      langToggleIcon: "/venezuela_icon.png",
+      langToggleIcon: "/venezuela_icon.webp",
       langToggleLabel: "ES",
     },
     hero: {

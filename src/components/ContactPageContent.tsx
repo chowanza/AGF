@@ -14,7 +14,7 @@ export default function ContactPageContent() {
     <main className="inner-page-main">
       <section className="inner-page-hero">
         <Image
-          src="/footer_bg.png"
+          src="/footer_bg.webp"
           alt="AGF Group contact"
           fill
           className="inner-page-hero-bg"

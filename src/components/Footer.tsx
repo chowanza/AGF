@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer className="footer" id="contact" style={{ position: "relative", overflow: "hidden" }}>
       <Image
-        src="/footer_bg.png"
+        src="/footer_bg.webp"
         alt="AGF Group footer background"
         fill
         style={{ objectFit: "cover", objectPosition: "center", opacity: 0.18 }}

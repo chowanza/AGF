@@ -6,10 +6,10 @@ import { ArrowRight, Building2, HardHat, Pickaxe, Truck } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
 
 const sectorImages = [
-  "/petroleo_bg.png",
-  "/mineria_bg.png",
-  "/transporte_bg.png",
-  "/construccion_bg.png",
+  "/petroleo_bg.webp",
+  "/mineria_bg.webp",
+  "/transporte_bg.webp",
+  "/construccion_bg.webp",
 ];
 
 const sectorIcons = [Building2, Pickaxe, Truck, HardHat];
