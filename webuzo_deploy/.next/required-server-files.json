@@ -70,7 +70,7 @@
           "hostname": "plus.unsplash.com"
         }
       ],
-      "unoptimized": false
+      "unoptimized": true
     },
     "devIndicators": {
       "position": "bottom-left"

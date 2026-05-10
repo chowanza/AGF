@@ -1,10 +1,10 @@
 {
   "/icon.svg/route": "/icon.svg",
   "/_not-found/page": "/_not-found",
-  "/policies/page": "/policies",
   "/about-us/page": "/about-us",
   "/contact-us/page": "/contact-us",
-  "/products/page": "/products",
   "/page": "/",
-  "/service/page": "/service"
+  "/products/page": "/products",
+  "/service/page": "/service",
+  "/policies/page": "/policies"
 }

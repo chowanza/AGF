@@ -1,10 +1,10 @@
 {
   "/icon.svg/route": "app/icon.svg/route.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/policies/page": "app/policies/page.js",
   "/about-us/page": "app/about-us/page.js",
   "/contact-us/page": "app/contact-us/page.js",
-  "/products/page": "app/products/page.js",
   "/page": "app/page.js",
-  "/service/page": "app/service/page.js"
+  "/products/page": "app/products/page.js",
+  "/service/page": "app/service/page.js",
+  "/policies/page": "app/policies/page.js"
 }
