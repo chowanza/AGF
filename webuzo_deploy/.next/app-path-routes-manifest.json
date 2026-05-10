@@ -2,9 +2,9 @@
   "/icon.svg/route": "/icon.svg",
   "/_not-found/page": "/_not-found",
   "/about-us/page": "/about-us",
-  "/contact-us/page": "/contact-us",
-  "/page": "/",
-  "/products/page": "/products",
+  "/policies/page": "/policies",
   "/service/page": "/service",
-  "/policies/page": "/policies"
+  "/products/page": "/products",
+  "/page": "/",
+  "/contact-us/page": "/contact-us"
 }

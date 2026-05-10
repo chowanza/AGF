@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy:webuzo": "next build && node scripts/prepare-webuzo.mjs",
     "start": "next start",
     "lint": "next lint"
   },
