@@ -11,7 +11,7 @@ export default function PoliciesPageContent() {
 
   return (
     <main className="inner-page-main">
-      <section className="inner-page-hero">
+      <section className="inner-page-hero policy-hero">
         <Image
           src="/home_bg.png"
           alt="AGF Group policies"
@@ -21,14 +21,16 @@ export default function PoliciesPageContent() {
           priority
         />
         <div className="inner-page-hero-overlay" />
-        <div className="inner-page-hero-content">
-          {t.policiesPage.eyebrow ? (
-            <span className="section-tag">{t.policiesPage.eyebrow}</span>
-          ) : null}
-          <h1 className="inner-page-title">{t.policiesPage.title}</h1>
-          {t.policiesPage.intro ? (
-            <p className="inner-page-intro">{t.policiesPage.intro}</p>
-          ) : null}
+        <div className="inner-page-hero-content policy-hero-content">
+          <div className="policy-hero-copy">
+            {t.policiesPage.eyebrow ? (
+              <span className="section-tag">{t.policiesPage.eyebrow}</span>
+            ) : null}
+            <h1 className="inner-page-title">{t.policiesPage.title}</h1>
+            {t.policiesPage.intro ? (
+              <p className="inner-page-intro">{t.policiesPage.intro}</p>
+            ) : null}
+          </div>
         </div>
       </section>
 

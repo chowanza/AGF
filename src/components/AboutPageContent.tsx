@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Target, Eye, ShieldCheck, Building2, MapPin, Factory } from "lucide-react";
 import { useLang } from "@/context/LanguageContext";
+import NewImagesCarouselSection from "@/components/NewImagesCarouselSection";
 
 const aboutIcons = [Building2, Target, Eye, ShieldCheck, Factory] as const;
 
@@ -19,9 +20,9 @@ export default function AboutPageContent() {
 
   return (
     <main className="inner-page-main">
-      <section className="inner-page-hero">
+      <section className="inner-page-hero about-hero">
         <Image
-          src="/footer_bg.png"
+          src="/home_bg.png"
           alt="AGF Group operations"
           fill
           className="inner-page-hero-bg"
@@ -29,16 +30,18 @@ export default function AboutPageContent() {
           priority
         />
         <div className="inner-page-hero-overlay" />
-        <div className="inner-page-hero-content">
-          <span className="section-tag">{t.aboutPage.eyebrow}</span>
-          <h1 className="inner-page-title">{t.aboutPage.title}</h1>
-          <p className="inner-page-intro">{t.aboutPage.intro}</p>
-          <div className="about-company-card">
-            <div className="about-company-card-title">
-              <MapPin size={18} />
-              <span>{t.aboutPage.companyCardTitle}</span>
+        <div className="inner-page-hero-content about-hero-content">
+          <div className="about-hero-copy">
+            <span className="section-tag">{t.aboutPage.eyebrow}</span>
+            <h1 className="inner-page-title">{t.aboutPage.title}</h1>
+            <p className="inner-page-intro">{t.aboutPage.intro}</p>
+            <div className="about-company-card">
+              <div className="about-company-card-title">
+                <MapPin size={18} />
+                <span>{t.aboutPage.companyCardTitle}</span>
+              </div>
+              <p>{t.aboutPage.companyCardBody}</p>
             </div>
-            <p>{t.aboutPage.companyCardBody}</p>
           </div>
         </div>
       </section>
@@ -60,12 +63,16 @@ export default function AboutPageContent() {
         </div>
       </section>
 
+      <NewImagesCarouselSection variant="about" />
+
       <section className="section about-quality-section">
         <div className="container about-quality-wrap">
-          <div className="section-header about-quality-header">
-            <span className="section-tag">{t.aboutPage.sections.quality.title}</span>
-            <h2 className="section-title">{t.aboutPage.sections.quality.title}</h2>
-            <p className="section-desc">{t.aboutPage.sections.quality.body}</p>
+          <div className="about-quality-layout">
+            <div className="section-header about-quality-header">
+              <span className="section-tag">{t.aboutPage.sections.quality.title}</span>
+              <h2 className="section-title">{t.aboutPage.sections.quality.title}</h2>
+              <p className="section-desc">{t.aboutPage.sections.quality.body}</p>
+            </div>
           </div>
           <div className="about-pillars-grid">
             {t.aboutPage.qualityPillars.map((item) => (

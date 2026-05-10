@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -6,6 +7,7 @@ import { useLang } from "@/context/LanguageContext";
 
 export default function Hero() {
   const { t } = useLang();
+
   return (
     <section className="hero" id="home">
       <Image

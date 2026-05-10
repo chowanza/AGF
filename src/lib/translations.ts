@@ -3,7 +3,7 @@ export const translations = {
     nav: {
       home: "Inicio",
       about: "Nosotros",
-      policies: "Politicas",
+      policies: "Políticas",
       products: "Productos",
       service: "Servicios",
       contact: "Contacto",
@@ -11,46 +11,46 @@ export const translations = {
       langToggleLabel: "EN",
     },
     hero: {
-      badge: "Operamos en mas de 50 paises",
+      badge: "Operamos en más de 50 países",
       title1: "LIDER EN SOLUCIONES",
       title2: "PARA LAS INDUSTRIAS",
       subtitle: "PETRÓLEO Y GAS, TRANSPORTE, SEGURIDAD, MINERÍA Y CONSTRUCCIÓN",
       cta1: "Explora Nuestros Servicios",
-      cta2: "Contactanos",
+      cta2: "Contáctanos",
     },
     sectors: {
       tag: "Nuestras Industrias",
       title: "Sectores que Atendemos",
-      desc: "Brindamos soluciones logisticas integrales y especializadas para los principales sectores industriales a nivel mundial.",
-      cta: "Contactanos",
+      desc: "Brindamos soluciones logísticas integrales y especializadas para los principales sectores industriales a nivel mundial.",
+      cta: "Contáctanos",
       items: [
         {
           id: "petroleum",
-          name: "Petroleo y Gas",
-          description: "Abastecimiento robusto para extraccion y distribucion.",
+          name: "Petróleo y Gas",
+          description: "Abastecimiento robusto para extracción y distribución.",
         },
         {
           id: "mining",
-          name: "Mineria",
-          description: "Equipamiento y logistica para proyectos complejos.",
+          name: "Minería",
+          description: "Equipamiento y logística para proyectos complejos.",
         },
         {
           id: "transport",
           name: "Transporte",
-          description: "Movimiento estrategico a traves de todas las modalidades.",
+          description: "Movimiento estratégico a través de todas las modalidades.",
         },
         {
           id: "construction",
-          name: "Construccion",
+          name: "Construcción",
           description: "Material y equipamiento para el desarrollo.",
         },
       ],
     },
     services: {
       tag: "Lo que ofrecemos",
-      title: "Nuestros Servicios Logisticos Clave",
-      leftTitle: "Nuestros Servicios\nLogisticos Clave",
-      cta: "Mas informacion",
+      title: "Nuestros Servicios Logísticos Clave",
+      leftTitle: "Nuestros Servicios\nLogísticos Clave",
+      cta: "Más información",
       items: [
         {
           id: "procurement",
@@ -74,14 +74,14 @@ export const translations = {
     },
     whyAgf: {
       tag: "Nuestra Propuesta de Valor",
-      title: "Por que AGF?",
-      desc: "En AGF Group combinamos decadas de experiencia con tecnologia de punta para ofrecer soluciones logisticas que superan las expectativas de nuestros clientes. Somos su socio estrategico de confianza en la cadena de suministro global.",
-      badge: "Anos de experiencia",
+      title: "¿Por qué AGF?",
+      desc: "En AGF Group combinamos décadas de experiencia con tecnología de punta para ofrecer soluciones logísticas que superan las expectativas de nuestros clientes. Somos su socio estratégico de confianza en la cadena de suministro global.",
+      badge: "Años de experiencia",
       features: [
         {
           id: "global-network",
           title: "Red Global",
-          description: "Presencia en mas de 50 paises con socios estrategicos certificados.",
+          description: "Presencia en más de 50 países con socios estratégicos certificados.",
         },
         {
           id: "security",
@@ -112,37 +112,37 @@ export const translations = {
     },
     aboutPage: {
       eyebrow: "Sobre Nosotros",
-      title: "Construimos relaciones de suministro con criterio tecnico y ejecucion confiable.",
+      title: "Construimos relaciones de suministro con criterio técnico y ejecución confiable.",
       intro:
-        "AGF Group, C.A. provee soluciones para las industrias de Petróleo y Gas, Transporte, Seguridad, Minería y Construcción. Nuestro objetivo principal es entregar soluciones innovadoras diseñadas para cumplir con los requerimientos de los proyectos de nuestros clientes.",
+        "AGF Group provee soluciones para las industrias de Petróleo y Gas, Transporte, Seguridad, Minería y Construcción. Nuestro objetivo principal es entregar soluciones innovadoras diseñadas para cumplir con los requerimientos de los proyectos de nuestros clientes.",
       companyCardTitle: "Base operativa",
       companyCardBody:
         "Av. José A. Anzoátegui, No 17, Oasis, Anaco. Estado Anzoátegui, Venezuela. Desde esta ubicación coordinamos procura, suministro y apoyo logístico para clientes industriales.",
       sections: {
         whoWeAre: {
-          title: "Quienes somos",
+          title: "Quiénes somos",
           body:
-            "Contamos con profesionales con amplia trayectoria en procesos de ingenieria, instalacion de sistemas electricos y mecanicos, asi como procura y logistica de equipos, maquinarias, repuestos, materiales y accesorios para petroleo y gas, manejo de materiales, construccion y transporte.",
+            "Contamos con profesionales con amplia trayectoria en procesos de ingeniería, instalación de sistemas eléctricos y mecánicos, así como procura y logística de equipos, maquinarias, repuestos, materiales y accesorios para petróleo y gas, manejo de materiales, construcción y transporte.",
         },
         goal: {
           title: "Objetivo",
           body:
-            "Nuestro objetivo principal es ofrecer el mejor servicio a nuestros clientes mediante comunicacion constante, planes claros y propuestas tecnicas y economicas consistentes que generen satisfaccion y soluciones integrales en un entorno globalizado.",
+            "Nuestro objetivo principal es ofrecer el mejor servicio a nuestros clientes mediante comunicación constante, planes claros y propuestas técnicas y económicas consistentes que generen satisfacción y soluciones integrales en un entorno globalizado.",
         },
         mission: {
-          title: "Mision",
+          title: "Misión",
           body:
-            "Ofrecer un servicio integral con profesionales altamente calificados, ejecutando cada tarea con eficiencia, calidad, productividad, competitividad e innovacion, siempre enfocados en las necesidades del cliente y apoyados por tecnologia de vanguardia.",
+            "Ofrecer un servicio integral con profesionales altamente calificados, ejecutando cada tarea con eficiencia, calidad, productividad, competitividad e innovación, siempre enfocados en las necesidades del cliente y apoyados por tecnología de vanguardia.",
         },
         vision: {
-          title: "Vision",
+          title: "Visión",
           body:
             "Ser una empresa de referencia nacional e internacional, prestando un servicio integral continuo, eficiente y eficaz, con alto nivel de calidad, confiabilidad y disponibilidad, preservando la seguridad, la productividad, el medio ambiente y la transparencia administrativa.",
         },
         quality: {
           title: "Control de calidad",
           body:
-            "Nuestro sistema de gestion de calidad garantiza el cumplimiento estricto de normas y procedimientos para satisfacer los estandares del cliente, reducir impactos ambientales y proteger la seguridad y salud ocupacional de nuestro equipo.",
+            "Nuestro sistema de gestión de calidad garantiza el cumplimiento estricto de normas y procedimientos para satisfacer los estándares del cliente, reducir impactos ambientales y proteger la seguridad y salud ocupacional de nuestro equipo.",
         },
         faja: {
           title: "Faja Petrolífera del Orinoco",
@@ -150,104 +150,105 @@ export const translations = {
         },
       },
       qualityPillars: [
-        "Satisfaccion del cliente",
-        "Implementacion de estrategia",
-        "Reparacion",
-        "Organizacion de personal",
+        "Satisfacción del cliente",
+        "Implementación de estrategia",
+        "Reparación",
+        "Organización de personal",
         "Procesamiento",
         "Equipos, materiales y herramientas",
-        "Tecnologia",
+        "Tecnología",
       ],
     },
     policiesPage: {
-      eyebrow: "",
-      title: "POLITICAS",
-      intro: "",
+      eyebrow: "Marco operativo",
+      title: "Políticas",
+      intro:
+        "Las políticas de AGF Group establecen el criterio con el que operamos en responsabilidad social, ética, calidad, prevención y gestión ambiental. Son la base para tomar decisiones consistentes, proteger a nuestro personal y sostener relaciones confiables con clientes, comunidades y aliados.",
       items: [
         {
           id: "social-responsibility",
           title: "Responsabilidad social",
           body: [
-            "El Grupo AGF C.A. busca constantemente una buena relaci?n con las comunidades aleda?as a nuestras infraestructuras. Esto nos permite mantener una comunicaci?n fluida basada en el respeto mutuo, la cortes?a, la transparencia, el acuerdo y la participaci?n, todo ello bajo criterios de transparencia.",
+            "AGF Group procura mantener una relación positiva y permanente con las comunidades aledañas a sus infraestructuras. Esto nos permite sostener una comunicación fluida, basada en el respeto mutuo, la cortesía, la transparencia, el acuerdo y la participación.",
           ],
-          listHeading: "AGF se compone de la siguiente premisa:",
+          listHeading: "AGF sustenta esta política en las siguientes premisas:",
           bullets: [
-            "Coordinar con la empresa contratista, las comunidades y las autoridades locales los planes de acci?n necesarios para minimizar las molestias que la operaci?n pueda ocasionar en las zonas involucradas.",
+            "Coordinar con la empresa contratista, las comunidades y las autoridades locales los planes de acción necesarios para minimizar las molestias que la operación pueda ocasionar en las zonas involucradas.",
             "Participar y contribuir eficazmente a mejorar la calidad de vida de nuestros empleados y sus familias.",
-            "El Grupo AGF C.A. velar? por la defensa de los Derechos Humanos. Por lo tanto, no existe discriminaci?n racial, sexual, religiosa ni de ning?n otro tipo.",
+            "Velar por la defensa de los Derechos Humanos. Por lo tanto, no existe discriminación racial, sexual, religiosa ni de ningún otro tipo.",
           ],
         },
         {
           id: "ethics-policy",
-          title: "?tica",
+          title: "Ética",
           body: [
-            "La ?tica, la integridad y el cumplimiento normativo son parte fundamental de nuestros valores. En el grupo AGF C.A. contamos con profesionales y personal altamente cualificadoos para trabajar con altos est?ndares en todo momento. Nuestra pol?tica de ?tica, integridad y cumplimiento normativo crea una cultura basada en buenos est?ndares, valores, confianza y transparencia en cada proceso que gestionamos. Nuestra ?tica est? ligada a nuestra cultura empresarial.",
+            "La ética, la integridad y el cumplimiento normativo constituyen una parte fundamental de nuestros valores. En AGF Group contamos con profesionales y personal altamente calificado para trabajar con altos estándares en todo momento. Nuestra política de ética, integridad y cumplimiento normativo promueve una cultura basada en valores, confianza y transparencia en cada proceso que gestionamos. Nuestra ética está estrechamente vinculada con nuestra cultura empresarial.",
           ],
-          listHeading: "Nuestra empresa ha desarrollado un c?digo ?tico y corporativo basado en combatir:",
+          listHeading: "Nuestra empresa ha desarrollado un código ético y corporativo orientado a prevenir y combatir:",
           bullets: [
-            "Corrupci?n (soborno, fraude, explotaci?n, extorsi?n, tergiversaci?n, etc.)",
+            "Corrupción (soborno, fraude, explotación, extorsión, tergiversación, etc.)",
             "Acoso laboral",
           ],
-          secondaryListHeading: "Algunos de nuestros principios ?ticos se han adaptado a muchas responsabilidades como:",
+          secondaryListHeading: "Algunos de nuestros principios éticos se aplican a responsabilidades como:",
           secondaryBullets: [
-            "Responsabilidad ambiental.",
-            "Discriminaci?n por raza, color, religi?n, sexo, edad y discapacidad f?sica",
+            "Responsabilidad ambiental",
+            "No discriminación por raza, color, religión, sexo, edad o discapacidad física",
           ],
         },
         {
           id: "quality-policy",
           title: "Calidad",
           body: [
-            "Nuestro sistema de gesti?n de calidad nos permite garantizar altos est?ndares de calidad y procedimientos establecidos para la satisfacci?n del cliente. Adem?s, la empresa se compromete a minimizar el impacto ambiental, la seguridad y la salud laboral de sus empleados.",
+            "Nuestro sistema de gestión de calidad nos permite garantizar altos estándares y procedimientos orientados a la satisfacción del cliente. Además, la empresa se compromete a minimizar el impacto ambiental y a resguardar la seguridad y la salud ocupacional de sus empleados.",
           ],
-          listHeading: "El Grupo AGF C.A. considera como parte de los est?ndares de calidad los siguientes hechos:",
+          listHeading: "AGF Group considera como parte de sus estándares de calidad los siguientes aspectos:",
           bullets: [
-            "Asegurar la calidad de todos los equipos, materiales, estructuras, componentes y sistemas utilizados en la construcci?n, fabricaci?n y operaci?n de todo tipo de instalaciones industriales.",
-            "Cumplir con todos los est?ndares y regulaciones de calidad pertinentes.",
-            "Verificar materiales, piezas y productos finales mediante controles independientes, auditor?as, inspecciones y testificaciones.",
-            "Obtener beneficios del control y garant?a de calidad (QA/QC) tanto fuera del sitio en las instalaciones de los fabricantes como en el sitio durante el proceso de construcci?n.",
+            "Asegurar la calidad de todos los equipos, materiales, estructuras, componentes y sistemas utilizados en la construcción, fabricación y operación de todo tipo de instalaciones industriales.",
+            "Cumplir con todos los estándares y regulaciones de calidad pertinentes.",
+            "Verificar materiales, piezas y productos finales mediante controles independientes, auditorías, inspecciones y testificaciones.",
+            "Aplicar control y garantía de calidad (QA/QC) tanto fuera del sitio, en las instalaciones de los fabricantes, como en el sitio durante el proceso de construcción.",
           ],
         },
         {
           id: "alcohol-tobacco-drugs",
           title: "Alcohol, tabaco y drogas",
           body: [
-            "AGF GROUP C.A., se compromete a mantener un ambiente de trabajo libre de alcohol, tabaco y drogas. Se toman en cuenta las siguientes medidas:",
+            "AGF Group se compromete a mantener un ambiente de trabajo libre de alcohol, tabaco y drogas. Para ello, se aplican las siguientes medidas:",
           ],
           bullets: [
-            "Se realizan campa?as durante el a?o para prevenir el consumo de alcohol, tabaco y drogas. En estas campa?as, se informa a los empleados sobre los efectos negativos que puede conllevar el consumo de estas sustancias a nivel individual, social, laboral y familiar.",
-            "Los empleados se someter?n a un proceso disciplinario si se verifica el consumo, posesi?n o uso de alcohol o drogas il?citas dentro de las instalaciones. Esto se considerar? una falta grave. Este procedimiento se aplicar? en caso de accidente en el que el consumo de alcohol o drogas haya sido un factor contribuyente.",
-            "Se realizan pruebas aleatorias peri?dicamente, sin previo aviso a todos los empleados, para verificar el nivel de alcohol o drogas.",
-            "Peri?dicamente, se realizan inspecciones en todas las ?reas de la empresa, sus veh?culos y contratados.",
+            "Se realizan campañas durante el año para prevenir el consumo de alcohol, tabaco y drogas. En estas campañas se informa a los empleados sobre los efectos negativos que estas sustancias pueden generar a nivel individual, social, laboral y familiar.",
+            "Los empleados se someterán a un proceso disciplinario si se verifica el consumo, posesión o uso de alcohol o drogas ilícitas dentro de las instalaciones. Esto se considerará una falta grave. Este procedimiento también se aplicará en caso de accidente cuando el consumo de alcohol o drogas haya sido un factor contribuyente.",
+            "Se realizan pruebas aleatorias periódicamente, sin previo aviso, para verificar niveles de alcohol o drogas.",
+            "Periódicamente se realizan inspecciones en todas las áreas de la empresa, sus vehículos y espacios contratados.",
           ],
         },
         {
           id: "hse-policy",
           title: "Salud, Seguridad y Medio Ambiente",
           body: [
-            "El Grupo AGF C.A. dise?? una pol?tica de Salud, Seguridad y Medio Ambiente para establecer directrices y responsabilidades en la gesti?n de residuos, tanto peligrosos como no peligrosos. Asimismo, se gestionan los efluentes y materiales generados por las actividades de los empleados. Estos procedimientos se implementar?n de forma que la gesti?n adecuada garantice la seguridad de nuestro personal y del medio ambiente.",
-            "El Grupo AGF C.A. est? comprometido con la protecci?n del medio ambiente como parte integral de su sistema de gesti?n de calidad. Esto significa que la empresa operar? con el objetivo de minimizar cualquier impacto negativo en el medio ambiente. Nuestro personal se preocupa constantemente por la conservaci?n del medio ambiente. En conclusi?n, AGF se compromete a minimizar cualquier riesgo ambiental, a la vez que mejoramos nuestro desempe?o. Adem?s, optimizamos el impacto ambiental y su no degradaci?n.",
+            "AGF Group diseñó una política de Salud, Seguridad y Medio Ambiente para establecer directrices y responsabilidades en la gestión de residuos, tanto peligrosos como no peligrosos. Asimismo, se controlan los efluentes y materiales generados por las actividades de los empleados. Estos procedimientos se implementan de manera que una gestión adecuada garantice la seguridad de nuestro personal y del medio ambiente.",
+            "AGF Group está comprometido con la protección del medio ambiente como parte integral de su sistema de gestión de calidad. Esto significa que la empresa opera con el objetivo de minimizar cualquier impacto negativo sobre el entorno. Nuestro personal mantiene una atención constante a la conservación ambiental. En conclusión, AGF Group se compromete a minimizar los riesgos ambientales, mejorar continuamente su desempeño y promover la no degradación del medio ambiente.",
           ],
           bullets: [],
         },
       ],
     },
     pageStatus: {
-      eyebrow: "Nueva Seccion",
-      title: "Pagina en desarrollo",
+      eyebrow: "Nueva Sección",
+      title: "Página en desarrollo",
       body:
-        "Esta seccion se agregara con el contenido del material aprobado. Por ahora dejamos la ruta lista dentro de la navegacion principal.",
+        "Esta sección se agregará con el contenido del material aprobado. Por ahora dejamos la ruta lista dentro de la navegación principal.",
       cta: "Volver al inicio",
     },
     productsPage: {
       eyebrow: "Productos",
       title: "Suministro industrial organizado por industria y aplicacion.",
       intro:
-        "AGF Group ofrece productos de fabricantes lideres y soluciones enfocadas en requerimientos tecnicos, disponibilidad y continuidad operativa para Oil & Gas, Mineria, Construccion y Transporte.",
+        "AGF Group ofrece productos de fabricantes líderes y soluciones enfocadas en requerimientos técnicos, disponibilidad y continuidad operativa para Oil & Gas, Minería, Construcción y Transporte.",
       categories: [
         {
           id: "oil-gas",
-          title: "Petroleo y Gas",
+          title: "Petróleo y Gas",
           groups: [
             {
               title: "Equipos auxiliares y herramientas",
@@ -257,11 +258,11 @@ export const translations = {
                 "Bombas Triples",
                 "Preventor de Reventones (BOP)",
                 "Top Drives",
-                "Valvulas de Seguridad y Adaptadores",
+                "Válvulas de Seguridad y Adaptadores",
                 "Equipos de Fishing",
                 "Winches Mecanicos e Hidraulicos",
-                "Valvulas de Compuerta",
-                "Valvulas de Alivio",
+                "Válvulas de Compuerta",
+                "Válvulas de Alivio",
               ],
             },
             {
@@ -278,7 +279,7 @@ export const translations = {
               ],
             },
             {
-              title: "Completacion y Produccion",
+              title: "Completación y Producción",
               items: [
                 "Coil Tubing",
                 "Unidad de Snubbing",
@@ -299,7 +300,7 @@ export const translations = {
                 "Intercambiador de Calor",
                 "Panel de Control",
                 "Separadores",
-                "Valvulas Bola, Compuerta, Globo y Mariposa",
+                "Válvulas Bola, Compuerta, Globo y Mariposa",
                 "Manometros",
                 "Transductores",
                 "Reguladores",
@@ -324,7 +325,7 @@ export const translations = {
         },
         {
           id: "mining-construction",
-          title: "Mineria y Construccion",
+          title: "Minería y Construcción",
           groups: [
             {
               title: "Maquinaria y equipo pesado",
@@ -527,7 +528,7 @@ export const translations = {
       secondaryCta: "Llamar ahora",
     },
     footer: {
-      desc: "Lideres en soluciones globales de cadena de suministro para los sectores de Petroleo y Gas, Mineria, Transporte y Construccion. Conectamos su negocio con el mundo.",
+      desc: "Líderes en soluciones globales de cadena de suministro para los sectores de Petróleo y Gas, Minería, Transporte y Construcción. Conectamos su negocio con el mundo.",
       navTitle: "Navegacion",
       servicesTitle: "Servicios",
       contactTitle: "Contacto",
@@ -662,7 +663,7 @@ export const translations = {
       eyebrow: "About Us",
       title: "We build supply relationships with technical judgment and reliable execution.",
       intro:
-        "AGF Group, C.A. provide procurement solutions to Oil & Gas, transportation, mining, and construction industry. Our main goal is to deliver innovative solutions designed to meet our customers project requirements.",
+        "AGF Group provides procurement solutions to the Oil & Gas, transportation, mining, and construction industries. Our main goal is to deliver innovative solutions designed to meet our customers' project requirements.",
       companyCardTitle: "Operating base",
       companyCardBody:
         "Av. José A. Anzoátegui, No 17, Oasis, Anaco. Estado Anzoátegui, Venezuela. From this location we coordinate procurement, supply, and logistics support for industrial clients.",
@@ -716,23 +717,23 @@ export const translations = {
           id: "social-responsibility",
           title: "Social Responsibility",
           body: [
-            "AGF Group, C.A. The Leader in Solutions, establishes the constant search for good relationship between the communities bordering our infrastructures. This allows us to be fluent framed about mutual respect, courtesy, transparency, agreement, and participation criteria of transparency.",
+            "AGF Group promotes strong and lasting relationships with the communities surrounding our infrastructure. This allows us to maintain open communication based on mutual respect, courtesy, transparency, agreement, and participation.",
           ],
           listHeading: "AGF is comprised with the following premise:",
           bullets: [
             "To coordinate with the contracting company, communities, and local authorities the action plans required to minimize any discomfort caused by the operation in the areas involved.",
             "To participate and to contribute effectively on improving the quality of life of our employees and their families.",
-            "AGF GROUP will ensure the defense of Human Rights. Therefore, there is no racial discrimination, sex, religion and others.",
+            "AGF Group safeguards Human Rights. Therefore, there is no discrimination based on race, sex, religion, or any other condition.",
           ],
         },
         {
           id: "ethics-policy",
           title: "Ethics",
           body: [
-            "The ethics, integrity and compliance, are fundamental part of our values. At AGF Group, C.A. The Leader in Solutions we have professionals and staff highly qualified to work with high standard in every moment. Our policy of ethics, integrity, and compliance create a culture based on good standards, values, trust and transparency of each process that we manage.",
-            "Our ethic is linkd to our business culture.",
+            "Ethics, integrity, and compliance are a fundamental part of our values. At AGF Group, we have highly qualified professionals and staff who work to the highest standards at all times. Our ethics, integrity, and compliance policy promotes a culture based on strong values, trust, and transparency in every process we manage.",
+            "Our ethical approach is closely tied to our business culture.",
           ],
-          listHeading: "Our company has developed a code of ethics and corporation based on combating:",
+          listHeading: "Our company has developed a corporate code of ethics focused on preventing and combating:",
           bullets: [
             "Corruption (bribery, fraud, exploitation, extortion, misrepresentation, etc.)",
             "Workplace harassment",
@@ -749,19 +750,19 @@ export const translations = {
           body: [
             "Our quality management system allows us to ensure high quality standards and procedures established to meet the satisfaction of the customer. Additionally, the company is committed to ensure a minimum environmental impact, safety and occupational health to the employees.",
           ],
-          listHeading: "AGF Group C.A. considers as part of the quality standards the following facts:",
+          listHeading: "AGF Group considers the following as part of its quality standards:",
           bullets: [
             "To assure the quality of all equipment, materials, structures, components and systems utilized in the construction, manufacturing and operation of all types of industrial facilities.",
             "To comply with all relevant quality standards and regulations.",
             "To verify materials, parts and final products through independent checks, audits, inspections and witnessing.",
-            "To get benefit from quality assurance and quality control (QA/QC) both off-site at manufacturers? facilities and on-site during the construction process.",
+            "To benefit from quality assurance and quality control (QA/QC) both off-site at manufacturers' facilities and on-site during the construction process.",
           ],
         },
         {
           id: "alcohol-tobacco-drugs",
           title: "Alcohol, Tobacco and Drugs",
           body: [
-            "AGF GROUP C.A., is committed to keep a work environment free of alcohol, tobacco, and drugs. The following measures are taken into account:",
+            "AGF Group is committed to maintaining a work environment free of alcohol, tobacco, and drugs. The following measures apply:",
           ],
           bullets: [
             "Campaigns are made during the year with the purpose of preventing the consumption of alcohol, tobacco, and drugs. In these campaigns, employees are notified about the negative effects that can lead to the consumption of these substances at an individual, social, work and family level.",
@@ -774,9 +775,9 @@ export const translations = {
           id: "hse-policy",
           title: "Health Safety Environment (HSE)",
           body: [
-            "AGF GROUP C.A., designed a HSE policy to establish guidelines and responsibilities for the waste management of hazardous or non-hazardous material. Also, the management of efffluents and materials wasted from the employees activities. These procedures will be made in a way that the appropriate management guarantees the safety of our personnel and environment.",
-            "AGF GROUP C.A., is committed to the environmental protection as an integral part of the quality management system. This means that the company will be operating in order to minimize any negative effects to the environment. Our staff is constantly being sensitive to the conservation of the environment.",
-            "In conclusion, AGF is committed to minimize any environmental risk, while we improve our performance. Also, to optimize the environmental impacts and non-degradation of this.",
+            "AGF Group designed an HSE policy to establish guidelines and responsibilities for the management of hazardous and non-hazardous waste, as well as effluents and materials generated by employee activities. These procedures are implemented to ensure the safety of our personnel and the environment.",
+            "AGF Group is committed to environmental protection as an integral part of its quality management system. This means the company operates with the goal of minimizing any negative impact on the environment. Our staff remains consistently attentive to environmental conservation.",
+            "In conclusion, AGF Group is committed to minimizing environmental risks, continuously improving performance, and promoting environmental preservation.",
           ],
           bullets: [],
         },
